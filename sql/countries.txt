@@ -1,0 +1,181 @@
+$ id $
+
+#KURZNAME, DEUTSCH	#KURZNAME, ENGLISCH	#LÄNDERCODE NACH ISO 3166-3	#LÄNDERCODE NACH ISO 3166-2	#Vorwahl
+Afghanistan	Afghanistan	AFG	AF	93
+Ägypten	Egypt	EGY	EG	20
+Albanien	Albania	ALB	AL	355
+Algerien	Algeria	DZA	DZ	213
+Andorra	Andorra	AND	AD	376
+Angola	Angola	AGO	AO	244
+Anguilla	Anguilla	AIA	AI	1264
+Äquatorialguinea	Equatorial Guinea	GNQ	GQ	240
+Argentinien	Argentina	ARG	AR	54
+Armenien	Armenia	ARM	AM	374
+Aserbaidschan	Azerbaijan	AZE	AZ	994
+Äthiopien	Ethiopia	ETH	ET	251
+Australien	Australia	AUS	AU	61
+Bahrain	Bahrain	BHR	BH	973
+Bangladesch	Bangladesh	BGD	BD	880
+Belgien	Belgium	BEL	BE	32
+Belize	Belize	BLZ	BZ	501
+Benin	Benin	BEN	BJ	229
+Bermuda	Bermuda	BMU	BM	1441
+Bolivien	Bolivia	BOL	BO	591
+Bosnien und Herzegowina	Bosnia and Herzegovina	BIH	BA	387
+Botsuana	Botswana	BWA	BW	267
+Brasilien	Brazil	BRA	BR	55
+Brunei	Brunei	BRN	BN	673
+Bulgarien	Bulgaria	BGR	BG	359
+Burkina Faso	Burkina Faso	BFA	BF	226
+Burundi	Burundi	BDI	BI	257
+Chile	Chile	CHL	CL	56
+China	China	CHN	CN	86
+Costa Rica	Costa Rica	CRI	CR	506
+Côte d'Ivoire	Ivory Coast	CIV	CI	225
+Dänemark	Denmark	DNK	DK	45
+Deutschland	Germany	DEU	DE	49
+Dominikanische Republik	Dominican Republic	DOM	DO	1809
+Dschibuti	Djibouti	DJI	DJ	253
+Ecuador	Ecuador	ECU	EC	593
+El Salvador	El Salvador	SLV	SV	503
+Estland	Estonia	EST	EE	372
+Färöer	Faroe Islands	FRO	FO	298
+Fidschi	Fiji	FJI	FJ	679
+Finnland	Finland	FIN	FI	358
+Frankreich	France	FRA	FR	33
+Gabun	Gabon	GAB	GA	241
+Gambia	Gambia, The	GMB	GM	220
+Georgien	Georgia	GEO	GE	995
+Ghana	Ghana	GHA	GH	233
+Gibraltar	Gibraltar	GIB	GI	350
+Griechenland	Greece	GRC	GR	30
+Grönland	Greenland	GRL	GL	299
+Großbritannien	United Kingdom	GBR	GB	44
+Guadalupur	Guadeloupe	GLP	GP	590
+Guatemala	Guatemala	GTM	GT	502
+Guinea	Guinea	GIN	GN	224
+Haiti	Haiti	HTI	HT	509
+Honduras	Honduras	HND	HN	504
+Hongkong	Hong Kong	HKG	HK	852
+Indien	India	IND	IN	91
+Indonesien	Indonesia	IDN	ID	62
+Irak	Iraq	IRQ	IQ	964
+Iran	Iran	IRN	IR	98
+Irland	Ireland (Eire)	IRL	IE	353
+Island	Iceland	ISL	IS	354
+Israel	Israel	ISR	IL	972
+Italien	Italy	ITA	IT	39
+Jamaika	Jamaica	JAM	JM	1876
+Japan	Japan	JPN	JP	81
+Jemen	Yemen	YEM	YE	967
+Jordanien	Jordan	JOR	JO	962
+Jugoslawien	Yugoslavia	YUG	YU	381
+Kambodscha	Cambodia	KHM	KH	855
+Kamerun	Cameroon	CMR	CM	237
+Kanada	Canada	CAN	CA	1
+Kasachstan	Kazakhstan	KAZ	KZ	7
+Katar	Qatar	QAT	QA	974
+Kenia	Kenya	KEN	KE	254
+Kirgisistan	Kyrgyzstan	KGZ	KG	996
+Kiribati	Kiribati	KIR	KI	686
+Kolumbien	Colombia	COL	CO	57
+Kongo	Congo, Republic of the	COG	CG	#NV
+Kongo, Demokratische Republik	Congo, Democratic Republic of	COD	CD	#NV
+Korea, Demokratische Volksrepublik	Korea, North	PRK	KP	850
+Korea, Republik	Korea, South	KOR	KR	82
+Kroatien	Croatia	HRV	HR	385
+Kuba	Cuba	CUB	CU	53
+Kuwait	Kuwait	KWT	KW	965
+Laos	Laos	LAO	LA	856
+Lesotho	Lesotho	LSO	LS	266
+Lettland	Latvia	LVA	LV	371
+Libanon	Lebanon	LBN	LB	961
+Liberia	Liberia	LBR	LR	231
+Libyen	Libya	LBY	LY	218
+Liechtenstein	Liechtenstein	LIE	LI	423
+Litauen	Lithuania	LTU	LT	370
+Luxemburg	Luxembourg	LUX	LU	352
+Madagaskar	Madagascar	MDG	MG	261
+Malawi	Malawi	MWI	MW	265
+Malaysia	Malaysia	MYS	MY	60
+Mali	Mali	MLI	ML	223
+Malta	Malta	MLT	MT	356
+Marokko	Morocco	MAR	MA	212
+Martinique	Martinique	MTQ	MQ	596
+Mauretanien	Mauritania	MRT	MR	222
+Mauritius	Mauritius	MUS	MU	230
+Mazedonien	Macedonia	MKD	MK	389
+Mexiko	Mexico	MEX	MX	52
+Mikronesien	Micronesia	FSM	FM	691
+Moldawien	Moldova	MDA	MD	373
+Monaco	Monaco	MCO	MC	377
+Mongolei	Mongolia	MNG	MN	976
+Mosambik	Mozambique	MOZ	MZ	258
+Namibia	Namibia	NAM	NA	264
+Nepal	Nepal	NPL	NP	977
+Neuseeland	New Zealand	NZL	NZ	64
+Nicaragua	Nicaragua	NIC	NI	505
+Niederlande	Netherlands, The	NLD	NL	31
+Niger	Niger	NER	NE	227
+Nigeria	Nigeria	NGA	NG	234
+Norwegen	Norway	NOR	NO	47
+Oman	Oman	OMN	OM	968
+Österreich	Austria	AUT	AT	43
+Pakistan	Pakistan	PAK	PK	92
+Palästina, Besetztes Gebiet	Palestine	PSE	PS	970
+Panama	Panama	PAN	PA	507
+Papua-Neuguinea	Papua New Guinea	PNG	PG	675
+Paraguay	Paraguay	PRY	PY	595
+Peru	Peru	PER	PE	51
+Philippinen	Philippines	PHL	PH	63
+Polen	Poland	POL	PL	48
+Portugal	Portugal	PRT	PT	351
+Puerto Rico	Puerto Rico	PRI	PR	#NV
+Ruanda	Rwanda	RWA	RW	250
+Rumänien	Romania	ROU	RO	40
+Russische Föderation	Russia	RUS	RU	7
+Salomonen	Solomon Islands	SLB	SB	677
+Sambia	Zambia	ZWB	ZM	260
+Saudi-Arabien	Saudi Arabia	SAU	SA	966
+Schweden	Sweden	SWE	SE	46
+Schweiz	Switzerland	CHE	CH	41
+Senegal	Senegal	SEN	SN	221
+Serbien und Montenegro	Serbia and Montenegro	SCG	CS	381
+Sierra Leone	Sierra Leone	SLE	SL	232
+Simbabwe	Zimbabwe	ZWE	ZW	263
+Singapur	Singapore	SGP	SG	65
+Slowakei	Slovakia	SVK	SK	421
+Slowenien	Slovenia	SVN	SI	386
+Somalia	Somalia	SOM	SO	252
+Spanien	Spain	ESP	ES	34
+Sri Lanka	Sri Lanka	LKA	LK	94
+Südafrika	South Africa	ZAF	ZA	27
+Sudan	Sudan	SDN	SD	249
+Swasiland	Swaziland	SWZ	SZ	268
+Syrien, Arabische Republik	Syria	SYR	SY	963
+Tadschikistan	Tajikistan	TJK	TJ	992
+Taiwan	Taiwan	TWN	TW	886
+Tansania, Vereinigte Republik	Tanzania	TZA	TZ	255
+Thailand	Thailand	THA	TH	66
+Togo	Togo	TGO	TG	228
+Tokelau	Tokelau	TKL	TK	690
+Tonga	Tonga	TON	TO	676
+Trinidad und Tobago	Trinidad and Tobago	TTO	TT	#NV
+Tschad	Chad	TCD	TD	235
+Tschechische Republik	Czech Republic	CZE	CZ	420
+Tunesien	Tunisia	TUN	TN	216
+Türkei	Turkey	TUR	TR	90
+Turkmenistan	Turkmenistan	TKM	TM	993
+Uganda	Uganda	UGA	UG	256
+Ukraine	Ukraine	UKR	UA	380
+Ungarn	Hungary	HUN	HU	36
+Uruguay	Uruguay	URY	UY	598
+Usbekistan	Uzbekistan	UZB	UZ	998
+Vatikanstadt	Holy See	VAT	VA	379
+Venezuela	Venezuela	VEN	VE	58
+Vereinigte Arabische Emirate	United Arab Emirates	ARE	AE	971
+Vereinigte Staaten	United States	USA	US	1
+Vietnam	Vietnam	VNM	VN	84
+Weißrussland	Belarus	BLR	BY	375
+Zentralafrikanische Republik	Central African Republic	CAF	CF	236
+Zypern	Cyprus	CYP	CY	357

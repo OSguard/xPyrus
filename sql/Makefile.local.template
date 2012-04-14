@@ -1,0 +1,26 @@
+# contains access configuration for database
+#
+# $Id: Makefile.local.template 1685 2006-09-28 22:17:07Z ads $
+#
+
+BIN_PSQL=psql
+
+# account data (must be an already existing superuser)
+DB_HOST=localhost
+DB_NAME=unihelp
+## schema name must be all lowercase
+DB_SCHEMA=yourcity
+DB_USER=root
+DB_PASS=
+# port is 5432 or 5433
+DB_PORT=5432
+
+# admin user
+DB_ADMIN_USER=unihelp_admin
+DB_ADMIN_PASS=yourpassword
+DB_ADMIN_GROUP=unihelp_admin_g
+
+# normal user
+DB_NORMAL_USER=unihelp
+DB_NORMAL_PASS=yourpassword
+DB_NORMAL_GROUP=unihelp_g

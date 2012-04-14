@@ -1,0 +1,22 @@
+{*
+
+xPyrus - Framework for Community and knowledge exchange
+Copyright (C) 2003-2008 UniHelp e.V., Germany
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, only version 3 of the
+License.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program. If not, see http://www.gnu.org/licenses/agpl.txt
+
+*}{* $Id: activate_fail.tpl 5894 2008-05-03 15:23:26Z schnueptus $ *}
+<div class="box"><h3>Willkommen bei [[local.local.project_domain]]!</h3>
+<p>Irgendwas ging hier schief :nixweiss:</p>
+</div>

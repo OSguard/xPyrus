@@ -1,0 +1,310 @@
+# home and main function
+^home$ /index.php?mod=index 
+^help/faq$ /index.php?mod=index&method=faq 
+^help/formatcode$ /index.php?mod=index&method=helpFormatcode 
+^help$ /index.php?mod=index&method=help 
+^imprint$ /index.php?mod=index&method=imprint 
+^privacy$ /index.php?mod=index&method=privacy 
+^terms_of_use$ /index.php?mod=index&method=terms_of_use 
+# use view=ajax here because we don't display boxes etc
+^smileys$ /index.php?mod=index&view=ajax&method=smileys 
+^banner/([0-9]+)$ /index.php?mod=index&method=bannerClick&banner_id=$1 
+^orgasm$ /index.php?mod=index&method=easterEgg 
+^jobs$ /index.php?mod=index&method=jobsOnUniHelp 
+^chat$ /index.php?mod=index&method=chat&view=ajax
+
+#login
+^login$ /index.php?dest=box&bname=user_login&method=login 
+# for logout we can set controller to index to avoid problems with implicit controller cache
+^logout$ /index.php?mod=index&dest=box&bname=user_login&method=logout  
+
+# shoutbox, toolbar update (e.g. for separate logging)
+^shoutboxupdate$ /index.php?dest=box&bname=shoutbox&method=ajaxGetShoutEntries&view=ajax 
+^toolbarupdate$ /index.php?mod=index&method=ajaxToolbar&view=ajax 
+
+# news
+^home/news/([0-9]+)/edit$ /index.php?mod=index&dest=modul&method=editNewsEntry&newsId=$1&showEntryValues=true 
+^home/news/([0-9]+)/del$ /index.php?mod=index&dest=modul&method=delNewsEntry&newsId=$1 
+^home/news/([0-9]+)/move$ /index.php?mod=index&dest=modul&method=moveNewsEntry&newsId=$1 
+^home/news/add$ /index.php?mod=index&method=addNewsEntry&showInput=true 
+^home/oldnews$ /index.php?mod=index&method=newsArchive 
+^home/oldnews/([0-9]+)$ /index.php?mod=index&method=newsArchive&page=$1 
+^home/news/rss$ /index.php?mod=index&method=NewsFeed&view=ajax 
+
+# user pages:
+# requests for user pages
+^user/((?:[^/]|\x20)+)$ /index.php?mod=userinfo&username=$1 
+# request for a specific guestbook page
+^user/((?:[^/]|\x20)+)/gb/([0-9]+)$ /index.php?mod=userinfo&username=$1&gbpage=$2 
+# request for a new diary entry
+^user/((?:[^/]|\x20)+)/gb/new$ /index.php?mod=userinfo&username=$1&method=addGBEntry 
+# request for a specific guestbook entry
+^user/((?:[^/]|\x20)+)/gbentry/([0-9]+)$ /index.php?mod=userinfo&username=$1&linkgbid=$2 
+# request for edit a specific guestbook entry
+^user/((?:[^/]|\x20)+)/gbentry/([0-9]+)/edit$ /index.php?mod=userinfo&username=$1&method=prepareEditGBEntry&gbid=$2 
+^user/((?:[^/]|\x20)+)/gbentry/([0-9]+),([0-9]+)/edit$ /index.php?mod=userinfo&username=$1&method=prepareEditGBEntry&gbid=$2&page=$3 
+# request for delete a gspecific uestbook entry
+^user/((?:[^/]|\x20)+)/gbentry/([0-9]+)/del$ /index.php?mod=userinfo&username=$1&method=deleteGBEntry&gbid=$2
+^user/((?:[^/]|\x20)+)/gbentry/([0-9]+),([0-9]+)/del$ /index.php?mod=userinfo&username=$1&method=deleteGBEntry&gbid=$2&page=$3 
+# request for comment a specific guestbook entry
+^user/((?:[^/]|\x20)+)/gbentry/([0-9]+)/comment$ /index.php?mod=userinfo&username=$1&method=prepareCommentGBEntry&gbid=$2 
+^user/((?:[^/]|\x20)+)/gbentry/([0-9]+),([0-9]+)/comment$ /index.php?mod=userinfo&username=$1&method=prepareCommentGBEntry&gbid=$2&page=$3 
+# request for quote a specific guestbook entry
+^user/((?:[^/]|\x20)+)/gbentry/([0-9]+)/quote$ /index.php?mod=userinfo&username=$1&method=quoteGBEntry&gbid=$2 
+# request for a specific diary page
+^user/((?:[^/]|\x20)+)/diary/([0-9]+)$ /index.php?mod=userinfo&username=$1&diarypage=$2 
+# request for a new diary entry
+^user/((?:[^/]|\x20)+)/diary/new$ /index.php?mod=userinfo&username=$1&method=addDiaryEntry 
+# request for a specific diary entry
+^user/((?:[^/]|\x20)+)/diaryentry/([0-9]+)$ /index.php?mod=userinfo&username=$1&linkdiaryid=$2 
+# request for delete a diary entry
+^user/((?:[^/]|\x20)+)/diaryentry/([0-9]+)/del$ /index.php?mod=userinfo&username=$1&method=deleteDiaryEntry&diaryid=$2 
+^user/((?:[^/]|\x20)+)/diaryentry/([0-9]+),([0-9]+)/del$ /index.php?mod=userinfo&username=$1&method=deleteDiaryEntry&diaryid=$2&diarypage=$3 
+# request for dedit a diary entry
+^user/((?:[^/]|\x20)+)/diaryentry/([0-9]+)/edit$ /index.php?mod=userinfo&username=$1&method=prepareEditDiaryEntry&diaryid=$2 
+^user/((?:[^/]|\x20)+)/diaryentry/([0-9]+),([0-9]+)/edit$ /index.php?mod=userinfo&username=$1&method=prepareEditDiaryEntry&diaryid=$2&diarypage=$3 
+# entry reporting
+^user/((?:[^/]|\x20)+)/reportdiary/([0-9]+)$ /index.php?mod=userinfo&username=$1&method=reportDiary&entryid=$2 
+^user/((?:[^/]|\x20)+)/reportgb/([0-9]+)$ /index.php?mod=userinfo&username=$1&method=reportGB&entryid=$2 
+
+#interactive features
+^user/((?:[^/]|\x20)+)/addfriend$ /index.php?mod=userinfo&dest=module&method=addFriend&username=$1 
+^user/((?:[^/]|\x20)+)/removefriend$ /index.php?mod=userinfo&dest=module&method=removeFriend&username=$1 
+^user/((?:[^/]|\x20)+)/smallworld$ /index.php?mod=userinfo&username=$1&method=smallWorld 
+^user/((?:[^/]|\x20)+)/advancedstats$ /index.php?mod=userinfo&method=advancedStats&username=$1 
+
+^user/((?:[^/]|\x20)+)/coursefiles$ /index.php?mod=courses&method=viewUserCourseFiles&username=$1 
+^user/((?:[^/]|\x20)+)/reversefriendlist$ /index.php?mod=userinfo&method=reverseFriendlist 
+#user-management
+#edit my settings
+^user/((?:[^/]|\x20)+)/profile$ /index.php?mod=usermanagement&username=$1 
+^user/((?:[^/]|\x20)+)/profile/edit$ /index.php?mod=usermanagement&username=$1&edit=1 
+^user/((?:[^/]|\x20)+)/features$ /index.php?mod=usermanagement&method=featureManagement&username=$1 
+^user/((?:[^/]|\x20)+)/features/edit$ /index.php?mod=usermanagement&method=featureManagement&username=$1&edit=1 
+^user/((?:[^/]|\x20)+)/contactdata$ /index.php?mod=usermanagement&method=contactData&username=$1 
+^user/((?:[^/]|\x20)+)/contactdata/edit$ /index.php?mod=usermanagement&method=contactData&username=$1&edit=1 
+^user/((?:[^/]|\x20)+)/privacy$ /index.php?mod=usermanagement&method=privacy&username=$1 
+^user/((?:[^/]|\x20)+)/privacy/edit$ /index.php?mod=usermanagement&method=privacy&username=$1&edit=1 
+^user/((?:[^/]|\x20)+)/courses$ /index.php?mod=usermanagement&method=courses&username=$1 
+^user/((?:[^/]|\x20)+)/courses/edit$ /index.php?mod=usermanagement&method=courses&username=$1&edit=1 
+^user/((?:[^/]|\x20)+)/boxes$ /index.php?mod=usermanagement&username=$1&method=configBoxes 
+^user/((?:[^/]|\x20)+)/boxes/edit$ /index.php?mod=usermanagement&username=$1&method=configBoxes 
+^user/((?:[^/]|\x20)+)/friendlist$ /index.php?mod=usermanagement&method=friendlist&username=$1 
+^user/((?:[^/]|\x20)+)/friendlist/edit$ /index.php?mod=usermanagement&method=friendlist&username=$1&edit=1 
+^user/((?:[^/]|\x20)+)/del$ /index.php?mod=usermanagement&method=deleteAccount&username=$1 
+^user/((?:[^/]|\x20)+)/del/edit$ /index.php?mod=usermanagement&method=deleteAccount&username=$1&edit=1 
+
+# group pages
+# request for group page
+^orgas$  /index.php?mod=groups  
+^orgas/([0-9]+)$ /index.php?mod=groups&dest=modul&method=viewGroupInfoPage&groupId=$1 
+^orgas/([0-9]+)_([^/]*)$ /index.php?mod=groups&dest=modul&method=viewGroupInfoPage&groupId=$1 
+^orgas/([0-9]+)/edit$ /index.php?mod=groups&dest=modul&method=editGroup&groupId=$1 
+^orgas/([0-9]+)/application$ /index.php?mod=groups&method=groupApplication&groupId=$1 
+^orgas/([0-9]+)/leave$ /index.php?mod=groups&method=leaveGroup&groupId=$1 
+^orgas/([0-9]+)/editInfo$ /index.php?mod=groups&dest=modul&method=editGroupInfopage&groupId=$1 
+^orgas/([0-9]+)/add/([0-9]+)$ /index.php?mod=groups&dest=modul&method=editGroup&groupId=$1&userToAdd=$2 
+^orgas/([0-9]+)/remove/([0-9]+)$ /index.php?mod=groups&dest=modul&method=editGroup&groupId=$1&userToDel=$2 
+^orgas/([0-9]+)/rights/([0-9]+)$ /index.php?mod=groups&dest=modul&method=editGroup&groupId=$1&setRights=$2 
+
+# forum pages:
+# request for forum overview
+^forum$ /index.php?mod=forum 
+# request for cat admin
+^forum/cat/([0-9]+)/(del|edit|rePos) /index.php?mod=forum&method=$2Category&catId=$1&showValues=yes 
+# request for forum latest
+^forum/latest$ /index.php?mod=forum&dest=modul&method=viewLatestThreads 
+^forum/latest/rss$ /index.php?mod=forum&dest=modul&method=forumFeed&view=ajax 
+# request for a specific forum
+^forum/nr/([0-9]+)$ /index.php?mod=forum&dest=modul&method=viewAllThreads&forumId=$1 
+^forum/nr/([0-9]+)/(add|del|editTags|edit|rePos) /index.php?mod=forum&method=$2Forum&forumId=$1&showValues=yes 
+^forum/nr/([0-9]+)/rss$ /index.php?mod=forum&dest=modul&method=forumFeed&forumId=$1&view=ajax 
+^forum/addsub/([0-9]+)$ /index.php?mod=forum&dest=modul&method=viewAllThreads&forumId=$1&addsub=true 
+^forum/nr/([0-9]+)/page/([0-9]+)$ /index.php?mod=forum&dest=modul&method=viewAllThreads&forumId=$1&page=$2 
+# request for a specific thread
+^forum/thread/([0-9]+)$ /index.php?mod=forum&dest=modul&method=viewThreadEntries&threadId=$1 
+# request for a specific thread page
+^forum/thread/([0-9]+)/page/([0-9]+)$ /index.php?mod=forum&dest=modul&method=viewThreadEntries&threadId=$1&page=$2 
+^forum/thread/([0-9]+)/page/([0-9]+)/([a-f0-9]+)$ /index.php?mod=forum&dest=modul&method=viewThreadEntries&threadId=$1&page=$2&rand=$3 
+# request for a specific thread action
+^forum/thread/([0-9]+)/del$ /index.php?mod=forum&dest=modul&method=delThread&threadId=$1 
+^forum/thread/([0-9]+)/edit$ /index.php?mod=forum&dest=modul&method=editThread&threadId=$1&showValues=yes 
+^forum/thread/([0-9]+)/sticky$ /index.php?mod=forum&dest=modul&method=ThreadStickyState&threadId=$1 
+^forum/thread/([0-9]+)/close$ /index.php?mod=forum&dest=modul&method=ThreadCloseState&threadId=$1
+^forum/thread/([0-9]+)/visible$ /index.php?mod=forum&dest=modul&method=ThreadVisibleState&threadId=$1 
+^forum/thread/([0-9]+)/last$ /index.php?mod=forum&dest=modul&method=viewThreadLastRead&threadId=$1 
+
+# request for a specific thread entry
+^forum/entry/([0-9]+)$ /index.php?mod=forum&dest=modul&method=viewThreadEntry&entryId=$1 
+# request far a specific thread entry to edit
+^forum/entry/([0-9]+)/edit$ /index.php?dest=module&mod=forum&entryId=$1&method=editThreadEntry&showEntryValues=yes 
+^forum/entry/([0-9]+),([0-9]+)/edit$ /index.php?dest=module&mod=forum&entryId=$1&method=editThreadEntry&page=$2 
+# request far a specific thread entry to del
+^forum/entry/([0-9]+)/del$ /index.php?dest=module&mod=forum&entryId=$1&method=delThreadEntry 
+# request far a specific thread entry to quote
+^forum/entry/([0-9]+),([0-9]+)/quote$ /index.php?dest=module&mod=forum&quoteId=$1&method=addThreadEntry&page=$2 
+^forum/entry/([0-9]+)/quote$ /index.php?dest=module&mod=forum&quoteId=$1&method=addThreadEntry 
+# request far a specific thread history
+^forum/entry/([0-9]+)/history$ /index.php?dest=module&mod=forum&entryId=$1&method=viewThreadEntryHistory 
+# request far a specific thread report
+^forum/entry/([0-9]+)/report$ /index.php?dest=module&mod=forum&entryId=$1&method=reportThreadEntry 
+# request for a forum tag
+^forum/tag/([0-9]+)$ /index.php?mod=forum&dest=modul&method=viewTagThreads&tagId=$1 
+^forum/tag/([0-9]+)/page/([0-9]+)$ /index.php?mod=forum&dest=modul&method=viewTagThreads&tagId=$1&page=$2 
+#search
+^forum/search$ /index.php?mod=forum&dest=modul&method=searchThreadEntries 
+
+#pm pages:
+#request for inbox
+^pm/inbox$ /index.php?mod=pm 
+^pm/inbox/([0-9]+)$ /index.php?mod=pm&page=$1 
+#request for outbox
+^pm/outbox$ /index.php?mod=pm&method=viewPmSent 
+^pm/outbox/([0-9]+)$ /index.php?mod=pm&method=viewPmSent&page=$1 
+#request for new pm
+^pm/new$ /index.php?mod=pm&method=newUserPm 
+^pm/submit$ /index.php?mod=pm&method=newUserPm&sendsuccessful=1 
+^pm/new/to_(.*)/caption_(.*)$ /index.php?mod=pm&method=newUserPm&receivers=$1&caption=$2 
+^pm/new/caption_(.*)$ /index.php?mod=pm&method=newUserPm&caption=$1 
+^pm/new/to_(.*)$ /index.php?mod=pm&method=newUserPm&receivers=$1 
+^pm/new/course/([0-9]+)$ /index.php?mod=pm&method=newUserPm&courseId=$1 
+#request for read pm
+^pm/([0-9]+)$ /index.php?mod=pm&dest=modul&method=viewPmEntrie&pmId=$1 
+#request for read send pm
+### ^pm/send/([0-9]+)$ /index.php?mod=pm&dest=modul&method=viewPmEntrie&pmId=$1&send=true 
+#request for fwd pm
+^pm/([0-9]+)/fwd$ /index.php?mod=pm&dest=modul&method=newUserPm&fwdId=$1 
+#request for quote pm
+^pm/([0-9]+)/quoteall$ /index.php?mod=pm&dest=modul&method=newUserPm&quoteId=$1&send=true&toAll=true 
+^pm/([0-9]+)/quote$ /index.php?mod=pm&dest=modul&method=newUserPm&quoteId=$1&send=true
+#request for delete pm
+^pm/([0-9]+)/del$ /index.php?mod=pm&method=delPm&pmId=$1 
+^pm/([0-9]+),([0-9]+)/del$ /index.php?mod=pm&method=delPm&pmId=$1&page=$2 
+^pm/([0-9]+)/dels$ /index.php?mod=pm&method=delPmSent&pmId=$1 
+^pm/([0-9]+),([0-9]+)/dels$ /index.php?mod=pm&method=delPmSent&pmId=$1&page=$2 
+
+#course pages:
+#request for a course
+^course$ /index.php?mod=courses&dest=module&method=studyHome 
+^course/home/([a-zA-Z0-9]+)$ /index.php?mod=courses&dest=module&method=studyHome&course_name=$1 
+^course/file/latest$ /index.php?mod=courses&method=viewLatestCourseFiles 
+^course/([0-9]+)$ /index.php?mod=courses&dest=module&method=viewCourse&courseId=$1 
+^course/([0-9]+)/files$ /index.php?mod=courses&dest=module&method=viewCourseFiles&courseId=$1 
+^course/([0-9]+)/files/add$ /index.php?mod=courses&dest=module&method=addCourseFile&courseId=$1 
+^course/([0-9]+)/files_(costs|time|downloads)(asc|desc)$ /index.php?mod=courses&dest=module&method=viewCourseFiles&courseId=$1&order=$2&orderDir=$3 
+^course/([0-9]+)/files_(costs|time|downloads)(asc|desc)-([0-9]+)$ /index.php?mod=courses&dest=module&method=viewCourseFiles&courseId=$1&order=$2&orderDir=$3&page=$4 
+^course/([0-9]+)/files-([0-9]+)$ /index.php?mod=courses&dest=module&method=viewCourseFiles&courseId=$1&page=$2 
+^course/file/([0-9]+)$ /index.php?mod=courses&dest=module&method=viewCourseFile&fileId=$1 
+^course/file/([0-9]+)/edit$ /index.php?mod=courses&dest=module&method=viewCourseFiles&fileId=$1 
+^course/file/([0-9]+)/get$ /index.php?mod=courses&method=downloadCourseFile&fileId=$1 
+^course/file/([0-9]+)/rate$ /index.php?mod=courses&method=rateCourseFile&id=$1 
+
+# advanced blog:
+# entrance to unihelp blogosphere
+^blog$ /index.php?mod=blogadvanced&view=ajax&method=showBlogStart 
+^blog/create$ /index.php?mod=blogadvanced&view=ajax&method=createUserBlog 
+# request for a user's blog
+^blog/(user|orgas)/((?:[^/]|\x20)+)$ /index.php?mod=blogadvanced&view=ajax&method=showUserBlog&blog$1=$2 
+^blog/(user|orgas)/((?:[^/]|\x20)+)/page/([0-9]+)$ /index.php?mod=blogadvanced&view=ajax&method=showUserBlog&blog$1=$2&page=$3 
+^blog/(user|orgas)/((?:[^/]|\x20)+)/category/([0-9]+)$ /index.php?mod=blogadvanced&view=ajax&method=showUserBlog&blog$1=$2&cat_id=$3 
+^blog/(user|orgas)/((?:[^/]|\x20)+)/category/([0-9]+)/page/([0-9]+)$ /index.php?mod=blogadvanced&view=ajax&method=showUserBlog&blog$1=$2&cat_id=$3&page=$3 
+# request for a specific blog entry
+^blog/(user|orgas)/((?:[^/]|\x20)+)/archives/([0-9]+)$ /index.php?mod=blogadvanced&view=ajax&method=showUserBlogEntry&blog$1=$2&entry_id=$3 
+^blog/(user|orgas)/((?:[^/]|\x20)+)/archives/([0-9]+)/comments/([0-9]+)/del$ /index.php?mod=blogadvanced&view=ajax&method=showUserBlogEntry&blog$1=$2&entry_id=$3&deletecomment=$4 
+^blog/(user|orgas)/((?:[^/]|\x20)+)/archives/([0-9]+)/trackbacks/([0-9]+)/del$ /index.php?mod=blogadvanced&view=ajax&method=showUserBlogEntry&blog$1=$2&entry_id=$3&deletetrackback=$4 
+^blog/(user|orgas)/((?:[^/]|\x20)+)/trackback/([0-9]+)$ /index.php?mod=blogadvanced&view=ajax&method=addUserBlogTrackback&blog$1=$2&entry_id=$3 
+# date specific filtering
+^blog/(user|orgas)/((?:[^/]|\x20)+)/archives/date/([0-9]+)/([0-9]+)$ /index.php?mod=blogadvanced&view=ajax&method=showUserBlog&blog$1=$2&year=$3&month=$4 
+^blog/(user|orgas)/((?:[^/]|\x20)+)/archives/date/([0-9]+)/([0-9]+)/page/([0-9]+)$ /index.php?mod=blogadvanced&view=ajax&method=showUserBlog&blog$1=$2&year=$3&month=$4&page=$5 
+^blog/(user|orgas)/((?:[^/]|\x20)+)/archives/date/([0-9]+)/([0-9]+)/([0-9]+)$ /index.php?mod=blogadvanced&view=ajax&method=showUserBlog&blog$1=$2&year=$3&month=$4&day=$5 
+^blog/(user|orgas)/((?:[^/]|\x20)+)/archives/date/([0-9]+)/([0-9]+)/([0-9]+)/page/([0-9]+)$ /index.php?mod=blogadvanced&view=ajax&method=showUserBlog&blog$1=$2&year=$3&month=$4&day=$5&page=$6 
+# some actions
+^blog/(user|orgas)/((?:[^/]|\x20)+)/admin$ /index.php?mod=blogadvanced&view=ajax&method=editUserBlogEntry&blog$1=$2 
+^blog/(user|orgas)/((?:[^/]|\x20)+)/admin/post$ /index.php?mod=blogadvanced&view=ajax&method=editUserBlogEntry&blog$1=$2 
+^blog/(user|orgas)/((?:[^/]|\x20)+)/admin/post/([0-9]+)$ /index.php?mod=blogadvanced&view=ajax&method=editUserBlogEntry&blog$1=$2&entry_id=$3 
+^blog/(user|orgas)/((?:[^/]|\x20)+)/admin/categories$ /index.php?mod=blogadvanced&view=ajax&method=editUserBlogCategories&blog$1=$2 
+^blog/(user|orgas)/((?:[^/]|\x20)+)/admin/categories/([0-9]+)$ /index.php?mod=blogadvanced&view=ajax&method=editUserBlogCategories&blog$1=$2&cat_id=$3 
+^blog/(user|orgas)/((?:[^/]|\x20)+)/admin/misc$ /index.php?mod=blogadvanced&view=ajax&method=editUserBlogMisc&blog$1=$2 
+^blog/(user|orgas)/((?:[^/]|\x20)+)/admin/visibility$ /index.php?mod=blogadvanced&view=ajax&method=editUserBlogVisibility&blog$1=$2 
+# feeds
+^blog/(user|orgas)/((?:[^/]|\x20)+)/feeds/index.([a-z0-9]+)$ /index.php?mod=blogadvanced&view=ajax&method=showUserBlogFeed&blog$1=$2&feed_ver=$3 
+^blog/(user|orgas)/((?:[^/]|\x20)+)/feeds/comments.([a-z0-9]+)$ /index.php?mod=blogadvanced&view=ajax&method=showUserBlogCommentFeed&blog$1=$2&feed_ver=$3 
+^blog/feeds/index.([a-z0-9]+)$ /index.php?mod=blogadvanced&view=ajax&method=showBlogStartFeed&feed_ver=$1 
+^blog/feeds/comments.([a-z0-9]+)$ /index.php?mod=blogadvanced&view=ajax&method=showBlogStartCommentFeed&feed_ver=$1 
+
+
+#mantis
+^support$ /index.php?mod=mantis&source_cat=generall 
+^support/to([0-9]+)$ /index.php?mod=mantis&method=userAnswer&mantisId=$1 
+^support/([a-zA-Z0-9\-\+_\.]+)$ /index.php?mod=mantis&source_cat=$1 
+
+
+#admin
+^i_am_god$ /index.php?mod=i_am_god 
+^user/((?:[^/]|\x20)+)/edit$ /index.php?mod=i_am_god&user=$1 
+^user/((?:[^/]|\x20)+)/rights/edit$ /index.php?mod=i_am_god&method=editUserRights&username=$1 
+^user/((?:[^/]|\x20)+)/warnings/edit$ /index.php?mod=i_am_god&method=editUserWarnings&username=$1 
+^i_am_god/newuser$ /index.php?mod=usermanagement&dest=module&method=addUser 
+^i_am_god/newguest$ /index.php?mod=usermanagement&dest=module&method=createGuestUser 
+^i_am_god/purgeusers$ /index.php?mod=i_am_god&dest=module&method=purgeUsers 
+^i_am_god/roles$ /index.php?mod=i_am_god&dest=module&method=editRole 
+^i_am_god/role/([0-9]+)/del$ /index.php?mod=i_am_god&dest=module&method=deleteRole&roleId=$1 
+^i_am_god/role/([0-9]+)/delok$ /index.php?mod=i_am_god&dest=module&method=deleteRole&roleId=$1&confirmation=true 
+^i_am_god/role/([0-9]+)/edit$ /index.php?mod=i_am_god&dest=module&method=editRole&roleId=$1 
+^i_am_god/role/([0-9]+)/add$ /index.php?mod=i_am_god&dest=module&method=editUserRoleMembership&roleId=$1 
+^i_am_god/groups$ /index.php?mod=i_am_god&dest=module&method=editGroup 
+^i_am_god/group/([0-9]+)/del$ /index.php?mod=i_am_god&dest=module&method=deleteGroup&groupId=$1 
+^i_am_god/group/([0-9]+)/delok$ /index.php?mod=i_am_god&dest=module&method=deleteGroup&groupId=$1&confirmation=true 
+^i_am_god/group/([0-9]+)/edit$ /index.php?mod=i_am_god&dest=module&method=editGroup&groupId=$1 
+^i_am_god/group/([0-9]+)/rights$ /index.php?mod=i_am_god&dest=module&method=editGroupRights&groupId=$1 
+^i_am_god/group/([0-9]+)/add$ /index.php?mod=i_am_god&dest=module&method=editUserGroupMembership&groupId=$1 
+^i_am_god/tags/edit$ /index.php?mod=i_am_god&method=editTag 
+^i_am_god/study/edit$ /index.php?mod=i_am_god&method=editStudyPaths 
+^i_am_god/courses/edit$ /index.php?mod=i_am_god&method=editCourses 
+^user/((?:[^/]|\x20)+)/editGB$ /index.php?mod=i_am_god&method=editGB 
+^user/((?:[^/]|\x20)+)/editDiary$ /index.php?mod=i_am_god&method=editDiary 
+#^user/((?:[^/]|\x20)+)/showAllEntriesByAuthor$ /index.php?mod=i_am_god&method=showAllEntriesByAuthor 
+^user/((?:[^/]|\x20)+)/editFiles$ /index.php?mod=i_am_god&method=editUserFiles&username=$1 
+^i_am_god/editFiles$ /index.php?mod=i_am_god&method=editFiles 
+^i_am_god/freedownload/([0-9]+)$ /index.php?mod=i_am_god&method=freeDownload&file=$1 
+^i_am_god/deleteFile/([0-9]+)$ /index.php?mod=i_am_god&method=deleteFile&file=$1 
+^i_am_god/deleteFileVersion/([0-9]+)$ /index.php?mod=i_am_god&method=deleteFileVersion&file=$1 
+^i_am_god/bigbrother$ /index.php?mod=i_am_god&method=searchEntries 
+
+#user_online_box
+^user_online/sortByAge$ /index.php?dest=box&bname=user_online&method=sortByAge 
+^user_online/sortByGender$ /index.php?dest=box&bname=user_online&method=sortByGender 
+^user_online/sortByStatus$ /index.php?dest=box&bname=user_online&method=sortByStatus 
+^user_online/sortByCourse$ /index.php?dest=box&bname=user_online&method=sortByCourse 
+^user_online/sortByUsername$ /index.php?dest=box&bname=user_online&method=sortByUsername 
+
+#box_functions
+^([a-zA-Z0-9\-\+_\.]+)/minimize$ /index.php?dest=box&bname=$1&method=minimize 
+^([a-zA-Z0-9\-\+_\.]+)/maximize$ /index.php?dest=box&bname=$1&method=maximize 
+^([a-zA-Z0-9\-\+_\.]+)/close$ /index.php?dest=box&bname=$1&method=close 
+^([a-zA-Z0-9\-\+_\.]+)/instance/([a-zA-Z0-9\-\+_\.]+)/close$ /index.php?dest=box&bname=$1&method=close&instance=$2 
+
+#events
+^events$ /index.php?mod=index&method=showEvents 
+^events/(\d+)$ /index.php?mod=index&method=showEvents&EventId=$1 
+^events/(\d+)/edit$ /index.php?mod=index&method=editEvents&EditEventId=$1 
+^events/add /index.php?mod=index&method=addEvents 
+^events/(\d+)/del$ /index.php?mod=index&method=delEvents&EventId=$1 
+^events\.ics$ /index.php?mod=index&method=eventsCal
+
+# attachments
+# choose index controller here, because it's the simplest to work with entries
+# IMPORTANT: use ajax view here
+^attachments/([0-9]+)$ /index.php?mod=index&view=ajax&method=downloadAttachment&atm_id=$1 
+
+#rcanvassa new user
+^canvassuser$ /index.php?mod=usermanagement&dest=module&method=canvassUser 
+#register a new user
+^newuser$ /index.php?mod=usermanagement&dest=module&method=registerUser 
+#forgotten passwort site
+^passwordlost$ /index.php?mod=usermanagement&dest=module&method=passwordLost 
+#activation
+^activate/([0-9a-f]+)$ /index.php?mod=usermanagement&dest=module&method=activateUser&activation=$1 
+# request for user search
+^usersearch$ /index.php?mod=usermanagement&method=searchUserAdvanced 
+^userquicksearch$ /index.php?mod=usermanagement&method=searchUser 

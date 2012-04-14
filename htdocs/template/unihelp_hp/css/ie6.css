@@ -1,0 +1,123 @@
+html, body {
+	font-size: 10px !important;
+}
+
+* {
+	text-overflow: ellipsis;
+}
+
+td#left{
+	vertical-align: top;
+	padding-top: 30px;
+	width: 170px;
+}
+td#right{
+	vertical-align: top;
+	padding-top: 80px;
+	text-align: right;
+	width: 170px;
+}
+td#left .box, td#right .box{
+	width: 163px;
+}
+td#content{
+	vertical-align: top;
+	text-align: center;
+}
+div.shadow{
+	background-color: #fff !important;
+	border: 1px solid #9f9f9f !important;
+}
+div.shadow div{
+	background-color: #fff;
+}
+#guestbookfilter, #diaryfilter {
+	width: 90%;
+}
+div#userpic div {
+    min-height: 300px;
+}
+div#userpic div div {
+    min-height: 0 !important;
+}
+#mainTable {
+	width: 100%;
+	font-size: 12px;
+}
+td#right div
+{
+	text-align: left;
+}
+table.source, td.source, td.source pre
+{
+	width: 300px !important;
+}
+#ie6newentry{
+	width: 100%;
+}
+#ie6newentry h4, #ie6newentry h5{
+	display: none;
+}
+#ie6newentry .buttonbar p{
+    float:  left;
+    margin: auto 10px;
+}
+#userfriends li{
+	padding: 2px !important;
+}
+.ie6static{
+	position: static !important;
+}
+#nav  {
+    text-align: left;
+	padding-left: 10px;
+    background: url('images/navi.png') no-repeat;
+	background-position: 0 -10;
+	font-size: 12px;
+}
+#nav ul li ul li{
+	padding: 0;
+	border-top: 1px #000 solid;
+}
+#nav ul li ul li a{
+	display: block;
+	width: 140px;
+	height: 18px;
+	margin: 0px;
+	padding: 5px;
+	vertical-align: center;
+}
+#nav ul li ul li a:hover{
+    background: #D9CB9C;
+}
+.entry span.button {
+	text-align: left !important;
+}
+#footer div{
+    margin-left: 10px;
+}
+.news .entry img{
+	position: relative; right: 0px; top: 0px;
+}
+.counterbottom{
+    position: static !important; right: 0px;
+    bottom: 0px;
+}
+.ie6coursefiles {
+	width: 46% !important;
+}
+.course-thread span.caption {
+    padding-bottom: .3em !important;
+    /* f*cking IE undercuts the caption, so for
+       correct display of 'g','p' &c. we need some padding */
+}
+#footer{
+		font-size: 12px;
+}
+	
+.list-user {
+	height: 170px !important;
+}
+#userguestbook td{
+	border-bottom: 1px solid #9f9f9f;
+}

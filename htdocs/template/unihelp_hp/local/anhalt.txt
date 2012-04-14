@@ -1,0 +1,38 @@
+project_name:
+UniHelp
+
+project_domain:
+UniHelp.de
+
+project_title:
+Das Studenten-Netzwerk
+
+project_subtitle:
+Alles für Studenten von Studenten an Deiner Universität
+
+project_start_year:
+1999
+
+project_organisation:
+UniHelp e. V.
+
+welcome_text:
+Herzlich Willkommen auf dem Studentenportal der Hochschule Anhalt.</p><p class="clear margin">Als Studenten der Standorte Bernburg, Dessau und Köthen könnt Ihr hier kostenlos Unterlagen tauschen, Freunde treffen und über Gott und die Welt diskutieren. Fragen stellen, Antworten bekommen, die neuesten Dinge über die Hochschule erfahren &ndash; alles kein Problem!</p><p class="clear margin">Außerdem gibt’s viele nette Leute, die Euch kennen lernen wollen und eine Vernetzung mit <a href="http://magdeburg.unihelp.de">UniHelp Magdeburg</a>, so dass Ihr auch dort &quot;stöbern&quot; könnt.
+
+
+help_registration:
+Als Student bekommst Du normalerweise automatisch einen Zugang zum Rechnerpool Deiner Hochschule und eine E-Mail-Adresse, meistens &lt;Vorname&gt;.&lt;Nachnahme&gt;@student. .... hs-anhalt.de. Wenn Du sie noch nicht kennst, wende Dich bitte an das Rechenzentrum Deiner Hochschule.
+
+
+faq_formation:
+Den Beginn kann man leider nicht genau datieren, da UniHelp von einem ehemaligen Studenten (kwysk) während seines Studiums geschaffen wurde. Seine erste Idee war es, eine Plattform anzubieten, auf der alle Kommilitonen schnell und einfach Ihre Studienunterlagen tauschen können. Inzwischen kann UniHelp natürlich viel mehr!</p><p>Seit 2001 ist der UniHelp e.V. ein eingetragener Verein und seit 2007 wird er auch von Studenten der Hochschule Anhalt betrieben. Jeder der sich aktiv im Verein beteiligen möchte ist herzlich willkommen.
+
+faq_whyuniemail:
+Weiterhin gibt es auf UniHelp Studienunterlagen z.B. Klausuren, an denen die Professoren Rechte haben. Deshalb bemühen wir uns, die Unterlagen nur Studenten zugänglich zu machen.
+
+faq_getmail:
+Du bekommst mit Beginn Deines Studiums Login-Daten für die Rechnerpools. Mit diesen Daten kannst Du Dich in Deinen Webmailaccount einloggen, den Du meist mit einem kleinen Briefsymbol auf der Seite Deines Fachbereichs findest. Wenn es dennoch Probleme gibt, wende Dich einfach <a href="{mantis_url}">an den Support</a>.
+
+
+help_organisation:
+Die hier aufgeführten Organisationen sind hauptsächlich (aber nicht ausschließlich) an der Hochschule Anhalt aktive Projekte und Organisationen.

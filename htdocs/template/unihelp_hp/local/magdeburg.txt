@@ -1,0 +1,35 @@
+project_name:
+UniHelp
+
+project_domain:
+UniHelp.de
+
+project_title:
+Das Studenten-Netzwerk
+
+project_subtitle:
+Alles für Studenten von Studenten an Deiner Universität
+
+project_start_year:
+1999
+
+project_organisation:
+UniHelp e. V.
+
+welcome_text:
+Auf Magdeburgs größtem unabhängigen Studentenportal könnt Ihr kostenlos Unterlagen tauschen, Freunde treffen und über Gott und die Welt diskutieren. Fragen stellen, Antworten bekommen, die neuesten Dinge über die Uni und FH erfahren &ndash; alles kein Problem!</p><p class="clear margin">Außerdem gibt’s die aktuellen Partydates und viele nette Leute, die Euch kennenlernen wollen!
+
+help_registration:
+Als Student bekommst Du normalerweise automatisch einen Zugang zum Rechnerpool Deiner Hochschule und eine E-Mail-Adresse, meistens &lt;Vorname&gt;.&lt;Nachnahme&gt;@student.uni-magdeburg.de. Wenn Du sie noch nicht kennst, wende Dich bitte an das Rechenzentrum Deiner Hochschule, <a href="http://www.uni-magdeburg.de/urz/" title="Zur Hompage des URZ/Uni-MD">Uni</a>, <a href="http://www.zki.hs-magdeburg.de/service/netz/mail/email-studenten" title="Zur Info-Seite Studenten-E-Mail der HS">HS</a>.
+
+faq_formation:
+Den Beginn kann man leider nicht genau datieren, da UniHelp von einem ehemaligen Studenten (kwysk) während seines Studiums geschaffen wurde. Seine erste Idee war es, eine Plattform anzubieten, auf der alle Kommilitonen schnell und einfach Ihre Studienunterlagen tauschen können. Inzwischen kann UniHelp natürlich viel mehr!</p><p>Seit 2001 ist der UniHelp e.V. ein eingetragener Verein, der von Studenten der Magdeburger Hochschulen betrieben wird. Jeder der sich aktiv im Verein beteiligen möchte ist herzlich willkommen.
+
+faq_whyuniemail:
+Weiterhin hat sich über die Jahre ein umfangreiches Archiv an Studienunterlagen gebildet, unter anderem auch Klausuren der letzten Jahre. Daran haben die Professoren natürlich Rechte, weshalb wir uns ebenfalls bemühen die Unterlagen nur Studenten zugänglich machen.
+
+faq_getmail:
+<p>Als Student der <strong>Otto-von-Guericke-Universit&auml;t</strong> bekommst Du diese vom Rechenzentrum. Neben der Mensa findet befindet sich deren  Kontaktb&uuml;ro: <a href="http://www.uni-magdeburg.de/urza/kontakt.shtml">http://www.uni-magdeburg.de/urza/kontakt.shtml</a></p><p>Als Student  der <strong>Fachhochschule</strong> findest Du diese in der Regel bei Deiner  Immatrikulations-Bescheinigung f&uuml;r das erste Semester.
+
+help_organisation:
+Die hier aufgeführten Organisationen sind hauptsächlich (aber nicht ausschließlich) an der Uni und FH aktive Projekte und Organisationen.

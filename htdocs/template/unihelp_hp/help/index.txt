@@ -1,0 +1,8 @@
+$HeadURL: https://svn.unihelp.de:7823/unihelp_dev/v2/branches/xpyrus/htdocs/template/unihelp_hp/help/index.txt $
+$Id: index.txt 612 2006-01-07 10:20:11Z trehn $
+
+test1:
+Dies ist eine Hilfe aus der Hilfedatei
+test2:
+Dies ist eine andere Hilfe aus der Hilfedatei
+Sie besteht aus zwei Zeilen

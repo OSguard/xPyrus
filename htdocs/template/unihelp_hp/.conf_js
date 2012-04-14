@@ -1,0 +1,13 @@
+javascript/lib/behaviour.js
+javascript/lib/prototype.js
+javascript/lib/builder.js
+javascript/lib/effects.js
+javascript/lib/dragdrop.js
+javascript/lib/controls.js
+javascript/lib/slider.js
+javascript/lib/sound.js
+javascript/lib/sorttable.js
+
+javascript/autoload.js
+javascript/entryfunctions.js
+javascript/base.js

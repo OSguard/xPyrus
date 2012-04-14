@@ -1,0 +1,4 @@
+$Id$
+
+faq315:
+Die SHA1-Prüfsumme hilft, die Integrität der Datei nach dem Download festzustellen.

@@ -1,0 +1,77 @@
+$HeadURL: https://svn.unihelp.de:7823/unihelp_dev/v2/branches/xpyrus/htdocs/template/unihelp_hp/help/user_change.txt $
+$Id: user_change.txt 5898 2008-05-04 19:32:32Z schnueptus $
+
+first_name:
+Bitte gib Deinen Vornamen an. Andere User erfahren ihn nicht, wenn Du dies nicht explizit einstellst. Nach der Anmeldung kannst Du den Eintrag selbst nicht mehr ändern.
+last_name:
+Bitte gib Deinen Nachnamen an. Andere User erfahren ihn nicht, wenn Du dies nicht explizit einstellst. Nach der Anmeldung kannst Du den Eintrag selbst nicht mehr ändern.
+birthday:
+Bitte kontrolliere das Datum genau, später kannst Du diesen Eintrag nicht mehr selbstständig ändern.
+birthday_after:
+Um Dein eingetragenes Geburtsdatum jetzt noch zu ändern, wende Dich bitte an dass Support-Team.
+name_after:
+Um Deinen eingetragenen Namen jetzt noch zu ändern, wende Dich bitte an das Support-Team.
+birthday_show:
+Das Datum wird nicht in Deinem Profil angezeigt.
+
+study_path:
+Hier kannst Du Deinen Studiengang eintragen.
+study_path2:
+Ich studiere noch mehr?
+
+password:
+Bitte merke Dir das Passwort gut, da wir es Dir bei Verlust aufgrund von Missbrauchsversuchen nicht mehr nennen können! Dein Passwort muss mindestens vier Zeichen lang sein und darf keine Leerzeichen enthalten.
+password_old:
+Dein altes Passwort musst Du nur angeben, wenn Du Dein Passwort ändern möchtest.
+public_email:
+Hier kannst Du eine E-Mail Adresse eintragen, unter der Du am häufigsten zu erreichen bist.
+private_email:
+Hier kannst Du eine E-Mail Adresse eintragen, unter der Dich das Support-Team bei wichtigen Angelegenheiten erreichen kann.
+
+user_flirt_status:
+Du kannst hier einen Flirt-Status wählen:
+Grün: Ich bin Single
+Gelb: Eventuell zu überzeugen
+Rot: Denk nicht mal dran! :)
+homepage:
+Hast Du eine eigene Homepage oder eine Lieblingsseite?
+icq:
+Deine Nummer des IM ICQ. Wenn Du nicht bei ICQ angemeldet bist lass dieses Feld einfach frei.
+yahoo:
+Deine Nummer des IM Yahoo!. Wenn Du nicht bei Yahoo! angemeldet bist lass dieses Feld einfach frei.
+aim:
+Deine Nummer des IM AIM. Wenn Du nicht bei AIM angemeldet bist lass dieses Feld einfach frei.
+msn:
+Deine Nummer des IM MSN. Wenn Du nicht bei MSN angemeldet bist lass dieses Feld einfach frei.
+skype:
+Deinen Skype Nick kannst Du hier eintragen. Wenn Du nicht bei Skype angemeldet bist lass dieses Feld einfach frei.
+jabber:
+Hier kannst Du die ID eines Jabber Netzwerkes eintragen woran Du teilnimmst. Hast Du keine Jabber ID lasse dieses Feld frei.
+telephone_mobil:
+Hier kannst Du Deine Handy-Nummer eintragen. Andere User erfahren sie nicht, wenn Du dies nicht explizit einstellst.
+pgp_key:
+Hier kannst Du den Kurz-Fingerprint Deines öffentlichen PGP-Keys eintragen, damit andere User Dir verschlüsselte E-Mails schreiben können. Der Key sollte auf einem PGP-Keyserver liegen.
+
+university:
+Wähle Deine Hochschule.
+courses:
+Die Liste zeigt die Fächer, die Du bereits gewählt hast. Markiere ein Fach und klicke auf Entfernen, um das Fach aus der Liste zu löschen. Drücke "Strg" um mehrere Fächer gleichzeitig zu markieren. Wähle nur ein Fach und drücke den entsprechenden Button, um zur Homepage des Faches zu gelangen.
+searchcourses:
+Gib den Namen oder einen Teil des Namens des Faches, das Du hinzufügen möchtest, ein und klicke auf Suchen.
+findcourses:
+Du siehst die Fächer, die zu Deiner Suche passen. Markiere das gewünschte Fach und füge es per Klick Deiner Liste hinzu.
+
+signature:
+Alles, was Du hier eingibst, wird automatisch als Signatur unter jedem Beitrag von Dir gesetzt. Es ist also sinnvoll einen kurzen, prägnanten Spruch, Dein Lebensmotto oder einfach nur Blödsinn zu nehmen. Für die Signatur gelten dieselben Formatierungsregeln wie für Einträge im Forum. Bitte lass diesen Text nicht zu lang werden, die Leser sollen sich schliesslich auf deinen Beitrag konzentrieren.
+description:
+Diese Box lässt Deiner Kreativität freien Raum. Du hast die Wahl, ob Du hier Deinen Lebenslauf oder selbstgeschriebene Gedichte veröffentlichst ...
+user_picture:
+Ein nettes Bild von Dir. Dieses Bild wird auf Deiner Userseite angezeigt. Ausserdem wird es als Zufallsbild rechts oben mit ausgegeben. Das Bild darf höchstens 100kB groß sein.
+
+nation:
+Wähle Deine Nationalität.
+country:
+Wähle Dein (Herkunftsland?) Heimatland.
+
+guestbook:
+Dein Gästebuch ist nur für eingeloggte User sichtbar. Setzt Du das Häkchen für "Gästebuch öffentlich", kann Dein Gästebuch auch von nicht eingeloggten Personen gelesen werden.

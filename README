@@ -1,0 +1,59 @@
+
+==xPyrus.org==
+
+Open Source Document Echange and Community Framework
+
+This software was original develop from UniHelp e.V. - students from Magdeburg, Germany
+
+The Software ist Released to AGPL V3.
+
+=Installation of xPyrus under Linux=
+
+This tutorial assumes you have a current linux installation available and you have basic experience with the Apache webserver, PHP, and PostgreSQL. You need the following additional software.
+
+
+apache2
+postgresql-8.1+
+php5-pgsql
+php5-gd
+imagemagick
+
+
+Configure the apache config of the used virtual host as follows:
+
+Options FollowSymLinks
+AllowOverride All
+Download the latest version of Smarty to
+
+htdocs/lib/lib-template
+and extract the archive to lib-template/Smarty-x.x.xxx . Further copy in sql/ the file Makefile.local.template to Makefile.local and adjust the settings and scheme names. The same procedure applies to htdocs/conf/local_config.php.template. Apply the same database settings as in sql/Makefile.local are defined. Furthermore adjust:
+
+LOG_DIR (e.g. $SVN/logs)
+UPLOAD_DIR (e.g. $SVN/logs)
+comment the line, that defines SHARED_MEMORY_OFFSET and set any 32-Bit-Int
+set a PROJECT_NAME
+possibly comment LOCAL_CACHE_DIR (otherwise htdocs/lib/lib-template/cache has to be writeable for the web server).
+You can check the completeness of your local_config-configuration by opening /check-install.php in your browser.
+
+Copy the file htdocs/conf/enabled_modules.php.template to htdocs/conf/enabled_modules.php.
+
+To establish the database run in sql/ the following commands:
+
+make create-db
+createlang plpgsql unihelp
+make create-accounts
+make create-schema
+make s1-t
+Adjust the php config in your php.ini to
+
+magic_quotes_gpc = Off
+After all configure the DocumentRoot of the virtual host of your Apache webserver.
+
+Optinally you can copy dummy data from testdata/uploads/* to uploads/ and testdata/htdocs/userfiles/* to htdocs/userfiles. Possibly you should adjust permissions (there is a perl script in htdocs/admin/check_permissions.pl to do so in a productive installation).
+
+To enable URL rewrite do
+
+cd htdocs/admin/
+php5 generate_files.php
+We recommand the XDebug-Extension of the PHP-PECL-Repository (pecl install xdebug, then adjust php.ini extension=xdebug.so)
+

@@ -1,0 +1,28 @@
+#order deny,allow
+#allow from all
+
+# set directory index so that all requests with no valid module destination
+# go to the start page
+DirectoryIndex index.php?mod=index
+
+RewriteEngine on
+
+# remove trailing slash
+RewriteRule ^(.*)/$ $1
+
+RewriteCond %{REQUEST_URI} ^/images/(.*)$
+RewriteCond %{DOCUMENT_ROOT}/plugins/images/%{1} -f
+#RewriteCond /tmp/f -f
+RewriteRule ^images/(.*) /plugins/images/$1 [R,L]
+
+RewriteCond %{REQUEST_URI} !/index\.php$
+RewriteCond %{REQUEST_URI} !^/robots.txt
+RewriteCond %{REQUEST_URI} !^/template
+RewriteCond %{REQUEST_URI} !^/plugins
+RewriteCond %{REQUEST_URI} !^/images
+RewriteCond %{REQUEST_URI} !^/lib-irc
+RewriteCond %{REQUEST_URI} !^/userfiles
+RewriteCond %{REQUEST_URI} !^/contrib
+RewriteCond %{REQUEST_URI} !^/videos
+RewriteCond %{REQUEST_URI} !^/info.php
+RewriteRule ^.* /index.php [L]

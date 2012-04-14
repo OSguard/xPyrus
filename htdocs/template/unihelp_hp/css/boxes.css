@@ -1,0 +1,335 @@
+/*
+-- ICONS
+*/
+
+.box a.icon {
+    position: absolute;
+    top: 5px;
+    *top: 15px; /* for IE */
+    width: 14px;
+    height: 11px;
+    background-repeat: no-repeat;
+}
+a.icon span {
+  display: none;
+}
+a.iconClose {
+    right: 5px;
+    background: url('images/close.png');
+}
+a.iconClose:hover {
+    background: url('images/close_over.png') no-repeat;
+}
+a.iconMinimize {
+    right: 20px;
+    background: url('images/mini.png');
+}
+a.iconMinimize:hover {
+    background: url('images/mini_over.png') no-repeat;
+}
+a.iconMaximize {
+    right: 20px;
+    background: url('images/maxi.png');
+    background-position: 0px 1px;
+}
+a.iconMaximize:hover {
+    background: url('images/maxi_over.png') no-repeat;
+    background-position: 0px 1px;
+}
+
+.boxcontent li {
+	overflow: hidden;
+}
+
+/*
+-- INPUT
+*/
+
+.boxcontent input, .boxcontent select{
+	max-width: 99%;	
+}
+.boxcontent select{
+	font-size: 0.8em;
+	border: 1px solid #000;
+	background: #E7DBC1;	
+}
+.boxcontent input[type=submit]{
+	border: 1px solid #000;
+	background: #D9CB9C;
+	color: #000;
+}
+.boxcontent input[type=text], .boxcontent input[type=password]{
+	border: 1px solid #000;
+	background: #E7DBC1;
+	color: #000;
+}
+
+/*
+-- USER LOGIN BOX 
+*/
+#loggin_form input[type=text], #loggin_form input[type=password]{	
+	margin-top: 3px;
+}
+#loggin_form input[type=submit]{
+	float: left;
+	margin: 0;
+	margin-top: 2px;
+}
+#loggin_form fieldset {
+	width: 120px;
+}
+
+
+ul.usersetting {
+  margin: 0;
+  padding: 0;
+  width: 120px;
+}
+ul.usersetting li {
+  float: left;
+  display: block;
+  list-style-type: none;
+}
+ul.usersetting a{
+  display: block;
+  padding: 5px;
+}
+/*
+-- BIRTHDAY BOX 
+*/
+
+/* Geburtstagsliste */
+ul.birthdaylist li {
+  line-height: 1.6em;
+  padding-right: 2px;
+}
+ul.birthdaylist a {
+  background-image: url('images/birthday.gif');
+  background-position: right;
+  background-repeat: no-repeat;
+}
+/*
+-- USERSEARCH BOX
+*/
+
+
+#usersearch_form input[type=text]{	
+	margin-top: 3px;
+	margin-right: 10px;
+}
+#usersearch_form input[type=submit]{
+	float: right;
+	margin: 0;
+	margin-top: 2px;
+}
+a.small_link{
+	font-size: 0.8em;
+	margin-top: -5px;
+}
+
+/*
+-- USERONLINE BOX
+*/
+ul.sort-user{
+	text-align: center;
+	padding: 0;	
+}
+ul.sort-user li{
+	display: inline;
+	margin: 0;
+  	padding: 0;
+}
+ul.sort-user li:before{
+	content: "|";
+	color: #A39878;
+}
+ul.sort-user li:FIRST-CHILD:before{
+	content: "";
+}
+.list-user{
+	font-size: 0.85em;
+	overflow: scroll;
+	overflow-x: auto; /* CSS3 property supported by firefox and ie? */
+	max-height: 170px;
+}
+.list-user li{
+	margin-left: 10%;
+    /*width: 80%;*/
+}
+ul.list-user li a{
+ 	display: inline;
+ 	background-repeat: no-repeat;
+ 	padding-left: 12px;
+}
+ul.list-user li.maleyellow a {
+	background-image: url(images/male_yellow.gif);
+}
+ul.list-user li.femaleyellow a {
+	background-image: url(images/female_yellow.gif);
+}
+ul.list-user li.malegreen a {
+	background-image: url(images/male_green.gif);
+}
+ul.list-user li.femalegreen a {
+	background-image: url(images/female_green.gif);
+}
+ul.list-user li.malered a {
+	background-image: url(images/male_red.gif);
+}
+ul.list-user li.femalered a {
+	background-image: url(images/female_red.gif);
+}
+ul.list-user li.malenone a {
+	background-image: url(images/male_none.gif);
+}
+ul.list-user li.femalenone a {
+	background-image: url(images/female_none.gif);
+}
+ul.list-user li.gray a {
+	background-image: url(images/gray.gif);
+}
+
+/*
+-- USERCOURSEFILE BOX
+*/
+#left .box-coursefiles li a, #right .box-coursefiles li a{
+	display: inline;	
+}
+
+#left .box-coursefiles h4 a, #right .box-coursefiles h4 a{
+	display: block;	
+}
+
+#left .box-coursefiles .file-link, #right .box-coursefiles .file-link{
+	color: #016978 !important;
+	display: block;
+	}
+
+#left .box-coursefiles li, #right .box-coursefiles li{
+	border-bottom: 1px solid #cfcfcf;
+	padding: 3px 0 3px 0;
+	}
+/*
+-- Partners
+*/
+/* common stuff */
+#ad_ciao, #ad_woxikon, #ad_urbanite, #ad_studentenrat {
+  width: 140px;
+  height: 68px;
+  padding: 2px;
+  margin: 0 0 5px 2px;
+  border: #000 solid 1px;
+}
+#ad_ciao img, #ad_woxikon img, #ad_urbanite img, #ad_studentenrat img {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+#ad_ciao p, #ad_woxikon p, #ad_urbanite p {
+  padding: 0;
+  margin: 0;
+}
+/* detailed */
+#ad_ciao {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 10px;
+  text-decoration: none;
+  color: #000000;
+  background: #F7FBC3;
+  text-align: left;
+}
+#ad_ciao a {
+  color: #4B0082;
+  text-decoration: underline;
+  font-weight: bold;
+}
+#ad_ciao a:hover {
+  text-decoration: none;
+}
+#ad_ciao img {
+  float: left;
+  width: 40px;
+  margin: 4px 4px 2px 2px;
+}
+#ad_woxikon {
+  font-size: 10px;
+  text-decoration: none;
+  vertical-align: middle;
+  background: #F6CB80;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+#ad_woxikon img {
+  float: left;
+  width: 49px;
+  margin: 2px 0;
+}
+#ad_woxikon p.text {
+  background: #F4EFD1;
+  color: #7DAFC7;
+  border: #000000 solid 1px;
+  margin: auto;
+  text-align: left;
+  height: auto;
+  width: 80px;
+  float: right;
+  margin: 6px 0;
+}
+#ad_woxikon p.text a {
+  display: block;
+  padding: 2px 5px;
+  color: #4B0082;
+}
+#ad_urbanite {
+  text-align: center;
+  vertical-align: top;
+  height: 40px !important;
+}
+#ad_urbanite img {
+  width: 128px;  /* 266 px \times 83 px ==> 128 px \times 40 px */
+  height: 40px;
+}
+#ad_urbanite a {
+  text-decoration: none;
+}
+
+#ad_studentenrat {
+  text-align: center;
+  vertical-align: top;
+  height: 28px !important;
+}
+
+#ad_studentenrat img {
+  width: 128px;  /* 266 px \times 83 px ==> 128 px \times 40 px */
+  height: 28px;
+}
+#ad_studentenrat a {
+  text-decoration: none;
+}
+
+/*
+-- end partners
+*/
+
+/*
+-- wetter
+*/
+
+#wetter_com a{
+	background-image: none !important;
+}
+
+/*
+-- FestungMark Webcam
+*/
+
+#webcam_festungmark a{
+	background-image: none !important;
+}
+
+/*
+-- courseBox
+*/
+ul.courseBox li{
+ padding: 3px;
+ border-bottom: #cfcfcf solid 1px;
+}

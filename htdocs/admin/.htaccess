@@ -1,0 +1,8 @@
+# FIX
+# set authentication
+#
+# $Id:
+# $HeadURL: https://svn.unihelp.de:7823/unihelp_dev/v2/branches/xpyrus/htdocs/admin/.htaccess $
+
+order deny,allow
+deny from all

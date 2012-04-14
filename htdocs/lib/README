@@ -1,0 +1,12 @@
+#
+#
+# $Id: README 181 2005-09-01 21:52:04Z ads $
+
+in lib-sql das AdoDB Archiv holen und auspacken
+prüfen, ob in der index.php 'ADODB_VERSION' auf das
+ausgepackte Verzeichnis zeigt.
+
+
+in lib-template das Smarty Archiv holen und auspacken
+prüfen, ob in der index.php 'SMARTY_VERSION' auf das
+ausgepackte Verzeichnis zeigt.

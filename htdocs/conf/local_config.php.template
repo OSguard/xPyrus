@@ -1,0 +1,121 @@
+<?php
+#
+# xPyrus - Framework for Community and knowledge exchange
+# Copyright (C) 2003-2008 UniHelp e.V., Germany
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU Affero General Public License as
+# published by the Free Software Foundation, only version 3 of the
+# License.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU Affero General Public License for more details.
+#
+# You should have received a copy of the GNU Affero General Public License
+# along with this program. If not, see http://www.gnu.org/licenses/agpl.txt
+#
+
+# $Id: local_config.php.template 5867 2008-05-03 10:10:50Z schnueptus $
+#
+# contains local configs
+
+# set this to 'FALSE' this in a non-devel installation
+# set this to 'TRUE' this in a devel installation
+define('DEVEL', TRUE);
+
+
+# define other path for libraries
+#define('LIB_DIR', BASE . "/lib");
+
+# define other path for core directory
+#define('CORE_DIR', BASE . "/core");
+
+# define cache directory (root of cache dir)
+# use a secure path, /tmp is usually not safe!
+#define('LOCAL_CACHE_DIR', "/tmp/unihelp");
+
+# define database account
+define('DB_SERVER', "localhost");
+define('DB_USERNAME', "unihelp");
+define('DB_PASSWORD', "postgres");
+# port is '5432' or '5433'
+define('DB_PORT', "5432");
+define('DB_NAME', "unihelp");
+# this is the DB schema name for the city
+define('DB_SCHEMA', "yourcity");
+
+# base domain under which this city is available
+define('DOMAIN_BASE', "unihelp.de");
+# passphrase for private key (DEVEL phase: schema name)
+define('PK_PASSPHRASE', DB_SCHEMA);
+
+define('LOG_DIR','my log dir');
+
+# stuff for mails on error/exception
+define('ADMIN_MAIL','postmaster@localhost');
+define('DEFAULT_EXCEPTION_HEADER','exception occured');
+
+// this parameter should later be set via DB global_config entry
+// but for developing purposes, set it manually
+define('UPLOAD_DIR','the upload dir');
+
+# by default latex is not available
+# better use this as a flag/option controlled by /admin
+define('LATEX_AVAILABLE', false);
+
+# by default expect that no syntax highlight library is available
+define('HIGHLIGHT_AVAILABLE', false);
+
+# by default expect that no fulltext module is available
+define('SWISHE_AVAILABLE', false);
+
+# by default expect that no tsearch2 is available
+define('TSEARCH2_AVAILABLE', false);
+
+# by default no (fast) dijkstra-SQL is available
+define('DIJKSTRA_AVAILABLE', false);
+
+# user-id of system user (e.g. for sending system generated PMs)
+define('SYSTEM_USER_ID', null);
+
+# for cache tests in development phase
+define('CACHETEST', true);
+
+# password salt
+define('PASSWORD_SALT', '');
+
+# url salt
+define('URL_SALT', '');
+
+# mantis web service
+//TODO: effect of this parameter
+define('MANTIS_ENABLE', true);
+
+# uncomment, if server is behind a loadbalancer/proxy
+# which disguises the client's REMOTE_ADDR
+#define('BEHIND_PROXY', 1);
+
+# the shared memory offset is used as
+# the offset for all shared memory keys
+# used on this platform
+# it MUST be unique per hosted platform on this server
+# by +0x100000
+#define('SHARED_MEMORY_OFFSET', 0xdeadbeaf);
+
+# everything which we want our legacy users to do after first login
+# to the new system can be handled by the following define;
+# all prior logins are thought of as legacy users
+#
+#define('LEGACY_RELEASE_DATE', 'as soon as possible::TIMESTAMP');
+
+# hack for FestungsCam live pic
+#define('FESTUNGSCAM', 'http://devel-static.unihelp.de/Festung/festung_tv.png');
+
+# boxes you want use as default
+define('BOX_DEFAULT_RIGHT', '');
+define('BOX_DEFAULT_LEFT','user_login,blog:1,courses_files:1');
+define('BOX_DEFAULT_RIGHT_LOGGIN', '');
+define('BOX_DEFAULT_LEFT_LOGGIN', 'user_login,blog:1,user_online:1,friendslist:1,courses_files:1');
+?>

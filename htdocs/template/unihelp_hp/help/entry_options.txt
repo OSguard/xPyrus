@@ -1,0 +1,8 @@
+$HeadURL: https://svn.unihelp.de:7823/unihelp_dev/v2/branches/xpyrus/htdocs/template/unihelp_hp/help/entry_options.txt $
+$Id: entry_options.txt 2287 2007-01-27 17:59:01Z trehn $
+
+font-family:
+Bitte beachte, dass die gewählte Schriftart nur sichtbar ist, wenn sie auf Deinem System installiert und für den Browser verfügbar ist. Andernfalls wird sie im Browser durch eine geeignete generische Familie ersetzt, z. B. 'ScriptC' durch die serifen behaftete Standardschrift.
+
+update_notice:
+"Auf Änderungen hinweisen" bedeutet, dass ans Ende des Beitrages eine Zeile angefügt wird, in der die Bearbeitung und ihr Zeitpunkt festgehalten werden.

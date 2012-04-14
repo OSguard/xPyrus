@@ -1,0 +1,2138 @@
+/*   */
+@media all
+{
+/****** override user css **********************/
+* {
+	margin:0; 
+	padding:0; 
+	border-collapse: collapse; 
+	border-spacing: 0;
+	line-height:normal;
+}
+img { border: 0; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+body {
+	font-size:100.01%;
+} html > body {font-size:100.01%} 
+
+* html body {
+	font-size: 10px;
+}
+
+body {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+img {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #8B8B8B; /* kind of dark grey */
+}
+ul {
+    list-style: none;
+}
+/********* base **************************/	
+#body{
+	width: 970px;
+	margin: 0 auto;
+	background-image: url('images/header_neu.png');
+	background-position: top left;
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+
+#wrapper {
+  font-size: 0.8em;
+  line-height: 1.4em;
+	max-width: 970px;
+}
+		
+a {
+  color: #998F80;
+  background: transparent;
+  text-decoration: none;
+}
+a:link { }
+a:visited { }
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+a:active { }
+	
+/* mark external links */
+a[target ~= "_blank"] {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background: url('/images/icons/tab_go.png') no-repeat top right;
+  padding-right: 16px;
+  margin-right: 2px;
+}
+/* no symbol for banners */
+.commercial a {
+  background: none;
+  margin-right: auto;
+}
+	
+/********* 3 colum design ***************/
+
+h1
+{
+	float: left;
+	color: #000;
+	margin: 0;
+	width: 170px;
+	height: 100px;
+}
+
+.box
+{
+	background: url('images/box_unten.png') bottom right no-repeat;
+	padding: 0 0 2px 0;
+	width: 165px;
+    position: relative;
+}
+
+	
+#left .box
+{ 
+	margin: 0;
+}
+
+#right .box
+{
+	margin: 0;
+}
+
+#left .boxcontent /* right box borders */
+{
+	background: url('images/box_mitte.png') repeat-y top center;
+	margin: 0;
+	margin-left: -5px;
+	padding: 5px !important;
+	width: 100%;
+	/*color: #A39878;*/
+	color: #635838;
+}
+
+#right .boxcontent /* right box borders */
+{
+	background: url('images/box_mitte.png') repeat-y top center;
+	margin: 0;
+	margin-left: -5px;
+	padding: 5px;
+	width: 165px;
+	color: #635838;
+}
+
+#left h3, #right h3
+{
+	background: url('images/box_kopf.png') no-repeat top center;
+	color: #fff;
+	font-size: 0.8em;
+	font-weight: 900;
+	margin: 10px 0 0 -5px;
+	padding: 4px 0 0 10px;
+	width: 165px;
+	height: 21px;
+}
+.boxcontent a{
+	color: #525252 !important;
+}
+
+#left li
+{
+	margin: 0;
+	padding: 0;
+}
+
+#sunflower{
+	position: relative;
+	right: -60px; top: 0px;
+	float: right;
+	z-index: 101;
+	display: none;
+}
+#random-user{
+	position: relative;
+	float: right;
+	right: 0px; top: 2px;	
+	z-index: 100;
+	margin-left: -3px;
+	width: 162px;
+	height: 189px;
+}	
+/*
+--- Navigation
+*/
+/* respect to http://www.htmldog.com/articles/suckerfish/dropdowns/ */
+/* now some positioning */
+#nav {
+    position: absolute;
+    top: 105px;
+	margin: 0 auto;
+}
+#nav, #nav ul {
+    line-height: 1em;
+}
+#nav a {
+    display: block;
+    width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+#nav li {
+    float: left;
+    position: relative;
+    width: 10em; /* see above #nav a width */
+}
+#nav li ul {
+    position: absolute;
+    top: 30px;
+    left: -999em;
+}
+#nav li li ul {/* third level */
+    position: absolute;
+	left: -999em;
+}
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li.sfhover ul ul, #nav li.sfhover ul ul ul {
+	left: -999em;
+}
+#nav li:hover ul, #nav li.sfhover ul {
+    left: auto; /* sfhover because of JavaScript for fucked up Internet Explorer */
+    margin-left: -10px;
+}
+#nav li li:hover ul, #nav li li.sfhover ul {
+    left: 140px;
+	top: 0;
+}
+
+/* now some beauty */
+#nav a {
+    color: #000;
+	text-decoration: none;
+	font-weight: bold;
+    padding-top: 3px;
+}
+#nav ul li ul a {
+    color: #fff;
+}
+#nav ul li ul li a, #nav ul li ul li ul li a {
+    font-weight: normal;
+	padding: 0;
+}
+#nav {
+    background: url('images/menue_neu.png') left no-repeat;
+    text-align: center;
+    height: 31px;
+    width: 970px;
+    font-size: 0.8em;
+}
+* html #nav, * + html #nav  {
+    text-align: left;
+	padding-left: 10px;
+    background: url('images/menue_neu.png') left no-repeat;
+	background-position: 0 0px;
+}
+#nav ul li {
+    padding: 3px;
+    width: 140px;
+    height: 31px;
+    cursor: pointer;
+}
+#nav ul li + a {
+	font-weight: bold;
+}
+#nav ul li ul {
+    border: #000000 solid 1px;
+}
+#nav ul li ul li {
+    background: #587EAD;
+	color: #fff;
+    vertical-align: middle;
+    border-top: 1px #000 dotted;
+	height: auto;
+}
+#nav ul li ul li:hover {
+    background: #525252;
+}
+#nav a.navhelp {
+    text-align: left;
+	padding-left: 2em;
+	color: #FFFFFF;
+	background: transparent;
+}
+/*
+--- Nav end ---
+*/
+
+div#wrapper
+{
+	margin-top: 5px;
+	width: 100%;
+}
+* html div#wrapper{
+	padding-top: 32px;	
+}
+
+#contentfloatholder
+{
+	float: left;
+	width: 100%;
+	position: relative;
+}
+* + html #contentfloatholder{
+	margin-top: 32px;
+}
+
+#contentfloatholder:after
+{
+    content: "."; 
+    display: block; 
+    height: 0;
+    clear: both; 
+    visibility: hidden;
+}
+
+div#content
+{
+	color: #000;
+	float: left;
+	width: 100%;
+	margin-right: -95%;
+	margin-top: -60px;
+}
+
+div#left
+{
+	float:left;
+	width: 165px;
+	margin-left: -5%;
+	margin-top: -60px;
+}
+
+div#right
+{
+	padding-top: 50px;
+	float:right;
+	width: 165px;
+	margin-top: -60px;
+}
+
+
+/*************       For IE Mac           **************/
+/* IE/Win is also using these rules, but it doesn't mind */
+* html div#center {margin-right: -100%;}
+* html div#left {margin-left: -60px;}
+
+#centerpad {
+margin: 0 190px;
+z-index: inherit;
+}
+
+#footer {
+  background: url('images/menue.png') no-repeat top center;
+  clear: both;
+  font-size: .8em;
+  padding: 5px 0 2px 0;
+  margin-top: 5px;
+}
+#footer div{
+  display: block;
+  margin: 5px auto;
+  width: 670px;
+}
+#footer ul {
+  display: block;
+}
+#footer p {
+  padding: 0 10px 0 0;
+}
+#footer li {
+  display: block;
+  float: left;
+}
+#footer li a {
+  display: block;
+  text-align: center;
+  padding: 0 5px;
+  width: 100%;
+  height: 100%;
+  color: #998F80;
+}
+
+/*
+-- LISTS
+*/
+ul.vertical a {
+  display: block;
+  width: 143px;
+  padding-left: 10px;
+  background-color: transparent;
+  text-decoration: none;
+}
+ul.vertical a:link { }
+ul.vertical a:visited { }
+ul.vertical a:hover,
+ul.vertical a:focus{
+  background-color: #FFFFD9;
+  color: #4B0082;
+  text-decoration: none;
+} 
+
+/*
+-- MISC
+*/
+#pagename {
+  font-weight: bold;
+  font-size: 2em;
+  color: #587EAD;
+  background: transparent;
+  text-align: center;
+}
+#pagename.standalone {
+  margin-top: 2em;
+}
+ul#breadcrumbs {
+	margin-top: 1em;
+	margin-bottom: .5em;
+}
+#breadcrumbs ul {
+	display: inline;
+} 
+#breadcrumbs ul li {
+	padding-left: 2px;
+	display: inline;
+}
+/* stupid IE doesn't display that */
+/*#breadcrumbs ul li:before {
+	content: "\0020 \0020 \0020 \00BB \0020";
+}
+#breadcrumbs ul li.first:before {
+	content: " ";
+}*/
+/* need this due to IE that doesn't understand e.g. '+' selector */
+.clear {
+  clear: both;
+}
+.center {
+  text-align: center;
+}
+.hidden{
+  display: none !important;
+}
+.nopadding {
+    padding: 0 !important;
+}
+.padding{
+	padding: 5px;	
+}
+.nomargin {
+    margin: 0 !important;
+}
+.margin{
+	margin: 5px;	
+}
+.nofloat {
+    float: none !important;
+}
+.border{
+	border: 1px solid #cfcfcf;
+	height: 100%;
+	margin: 0px;
+}
+.border h3{
+	display: none;
+}
+/*
+  nice lists and nested lists
+*/
+ul.bulleted {
+    list-style: disc;
+    margin: 0 0 .5em 2em;
+}
+ul.bulleted ul {
+  list-style: circle;
+  margin-left: 1em;
+}
+ul.bulleted ul ul {
+  list-style: none;
+}
+ul.bulleted ul ul li:before {
+  content:"- ";
+}
+/* end lists */
+.pagenav{
+    text-align: center;
+    margin: 1.5em auto !important;
+    background: transparent;
+    width: 90%;
+}
+.pagenav a{
+    font-weight: bold;
+}
+h3 a,
+h3 a:focus {
+    color: inherit;
+}
+.adminNote {
+    color: blue;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+/*
+-- ERROR HANDLING 
+*/
+.errorbox {
+  border-color: red !important;
+}
+.errorbox h3 {
+  background-color: red;
+  color: white;
+  padding: .3em .5em .3em;
+}
+.errorbox ul {
+  padding: 1em 2em;
+  list-style: disc;
+}
+span.missing select {
+    background-color: red;
+    color: white;
+}
+span.missing label  {
+    font-weight: bold;
+    color: red;
+}
+h5.missing {
+    font-weight:bold;
+    color: red; 
+}
+/*
+-- HEADLINES
+*/
+#content h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+#content h4 {
+  font-size: 1.2em;
+  color: #000;
+  font-weight: bold;
+  background: transparent;
+  margin: 1.5em 0 0 0;
+}
+#content h4 a {
+  color: #000;
+}
+
+
+/*
+-- BOXES IN CENTRAL PART
+*/
+#content .box {
+  position: relative;
+  overflow: visible;
+  background: none; /* IE needs this */
+  color: inherit;
+  margin: 2em 0;
+  position:relative;
+  border: 1px solid #cfcfcf;
+  width:auto;
+}
+#content .box p, #toolbar p {
+  padding: .5em .5em 0 .5em;
+}
+
+#content .shadow {
+    border: 1px solid #535353;
+    -moz-border-radius: 8px;
+    background-color: #939393;
+    filter:progid:DXImageTransform.Microsoft.Glow(Color=#cfcfcf,Strength=1);
+    margin: 36px 5px 5px;
+    position: relative;
+}
+#content .shadow > div{
+    border: 1px solid #cfcfcf;
+    margin: 1px;
+    background: #fff;
+    padding: 3px;
+    position: relative;
+}
+#content .shadow h3 { /* the god damn IE 6 don't understand the selector + */
+    padding: 3px 10px 2px;
+    display: inline;
+    border: 1px solid #cfcfcf;
+    margin: 0 3px;
+    background: url('images/heller_verlauf.png') repeat-x left top;
+    font-weight: bold;
+    border-bottom: none;
+    position: absolute;
+    top: -1.7em;
+    left: 8px;
+}
+
+#content .shadow h4.someHead{
+	padding: 3px 10px 2px;
+	height: 24px;
+	display: block;
+	margin-top: -3px;
+	background: url('images/dunkler_verlauf.png') repeat-x left top;
+	color: #fff;
+	font-size: 1em;
+}
+
+/*
+-- COMMERCIAL  BOX
+*/
+/* design for the commercial boxes */
+#content div.commercial {
+  background-color:  #fff;
+  background-image: url('images/anzeige.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  color: #000;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto 0;
+  width: 468px;
+  padding: 0 7px 0 20px;
+}
+#content div.commercial img {
+  border: 0 solid #000;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/*
+-- PAGE COUNTERS
+*/
+.counter {
+	font-size: 80%;
+}
+th.counter {
+	font-size :80% !important;
+}
+div.counter {
+  position: absolute;
+  top: -1.5em;
+  right: 0;
+  border: 0 !important; /* override >div-shadow rule */
+  padding: 0 !important; /* override >div-shadow rule */
+  margin: 0 !important; /* override >div-shadow rule */
+  background: none !important; /* override >div-shadow rule */
+  /*width: 50%;*/
+  text-align: right;
+  float: right;
+  font-size: 85%;
+  width: 75%;
+  margin-bottom: -15px !important;
+}
+.counter strong {
+  font-size: 120%;
+}
+div.counterbottom {
+  top: 0; /* !important override .counter if neccessary */
+}
+
+/* 
+-- FORM STUFF
+*/
+/* padding is neccessary, because otherwise
+   select-boxes are to tight */
+option {
+  padding-right: 10px;
+}
+label,
+input[type=submit],
+input[type=reset] {
+  cursor: pointer;
+}
+form br {
+  clear: both;
+}
+fieldset {
+  border: 1px solid #cfcfcf;
+}
+label {
+  float: left;
+  width: 35%;
+  margin-right: .5em;
+  text-align: right;
+}
+input,
+textarea {
+  float: left;
+  margin-bottom: .6em;
+  margin-right: .5em;
+}
+input[type=submit],
+input[type=reset] {
+  margin-left: 35%;
+  margin-top: 4px;
+}
+input[type=submit] {margin-left: 15em;}
+input[type=submit] + input[type=submit],
+input[type=text] + input[type=submit],
+input[type=reset] {
+  margin-left: .3em;
+}
+input[type=text] + input[type=submit] {
+  margin-top: -.2em;
+}
+input[type=radio] + label,
+input[type=checkbox] + label {
+  margin-left: 0.3em;
+  width: auto;
+  max-width: 40%;
+  text-align: left;
+  float: left;
+}
+label.hidden {
+  display: none;
+}
+input[type=text],
+input[type=password],
+textarea {
+  background-color: #efe7d1;
+  color: #000000;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus {
+  background-color: #FFFFFC;
+  color: #000000;
+}
+fieldset legend {
+  font-size: 1.2em;
+  color: #c7ad66;
+  background-color: transparent;
+  font-weight: bold;
+  padding: 0 .5em;
+}
+p.boxlink{
+  display: block;
+  float: right;
+  padding-right: 10px;
+}
+p.boxlink a, a.boxlink {
+  color: #907B4C;
+  font-weight: bold;
+}
+/* specifiv form stuff */
+#content fieldset {
+  margin: .2em;
+  padding: .2em;
+}
+#left fieldset,
+#right fieldset {
+  border: 0;
+  margin: 3px;
+}
+#left input[type=submit],
+#right input[type=submit] {
+  margin-left: 0;
+}
+input.wide {
+    width: 20em;
+}
+select.wide {
+    width: 25em;
+}
+label.wide {
+	max-width: 60% !important;
+}
+p.note, ul.note {
+    padding: .5em 1em;
+    font-size: 0.85em;
+}
+ul.note {
+    list-style: circle;
+}
+#h2home{
+	margin-top: 1em;
+}
+#courserating input[type=radio]{
+	border: 1px solid red;
+	margin: 0px;
+	float: none;
+}
+input[name=quickvote]{
+	width: 80px;
+	height: 30px;
+	font-size: 0em;
+	float: none;
+	margin: 0px;
+	border: 2px groove #000;
+}
+/* enhanced form/input elements */
+#entryfield {
+  border: none;
+  width: 77%;
+  margin-right: 20%;
+  padding-left: 1%;
+  padding-bottom: 10px;
+}
+#entryfield fieldset {
+  margin: 0em;
+  margin-top: 10px;
+  padding: 1em;
+}
+/* file upload area needs special width ... */
+#entryfield.smallentryfield {
+  width: 69%;
+  border-right: 1px solid #000;
+}
+#entryfield input[type="radio"],
+#entryfield input[type="text"],
+#entryfield input[type="submit"],
+#entryfield input[type="checkbox"] {
+  margin-left: 0;
+}
+#entryfield label{
+  width: auto;
+}
+
+#entryfield input, textarea{
+	border: 2px solid #c7ad66;
+	border-style:inset;
+	padding: 0.1em;
+	padding-left: 0.3em;
+	background: #efe7d1;
+}
+#entryfield input[type=text],#entryfield textarea{
+	width: 95%;
+}	
+#pluspunkt{
+	width: 0.7em !important;	
+}
+#entryfield input:focus, textarea:focus {
+    background: #fffffc;
+}
+#entryfield input[type=submit], .filterbutton {
+	background: url('images/button.png');
+	float: left;
+	height: 22px;
+	border: 2px solid #c7ad66;
+	border-style:outset;
+}
+#entryfield h5 {
+  display: inline;
+  margin-left: .5em;
+}
+/* input options */
+#entryoptions{
+    background: #eee;
+    margin: 0 0 10px 0;
+    padding: 7px 0 0 0;
+    border: none;
+    height: 32px;
+}
+#entryoptions h4{
+    display: none;
+}
+#entryoptions h5{
+    display: none;
+}
+#entryoptions p, 
+#entryoptions select {
+    float:  left;
+    margin: auto 10px;
+}
+/** div#entryoptions img {
+    display: inline;
+    } commented out by Hendrik */
+#entryoptionsmileys {
+	float: right;
+    width: 18%;
+    border: 1px solid #cfcfcf;
+	margin: 10px 1% 0px 0px;
+}
+#entryoptionsmileys select{
+	width: 90%;
+	margin: 5px auto;	
+	border: 1px solid #000;
+}
+#entryoptionsmileys h5{
+	color: #000;
+	font-size: 0.8em;
+}
+#entryoptionsmileys p{
+	float: right;
+	width: 100%;
+}
+#entryoptionsmileys .distance-top {
+	margin-top: 1.5em;
+}
+.filterbutton{
+	margin: 8px 5px 0px 10% !important;
+}
+.quickbutton{
+	padding-left: 10px;
+}
+.quickbutton input{
+	margin: 0;
+}
+/*
+-- HELP POPUPS
+*/
+a.add-feature {
+  cursor: help;
+  position: relative;
+  padding-left: .5em;
+  color: #000000;
+  background: transparent;
+  font-weight: normal;
+}
+a.add-feature:hover { /* declare something to fix bug in IE 5.5, IE 6 */
+  border: none;
+  text-decoration: none;
+}
+a.add-feature span.add-feature-popup {
+  position: absolute;
+  top: 3.2em;
+  left: 2.5em;
+  display: none;
+  width: 15em;
+  padding: .5em;
+}
+a.add-feature:hover span.add-feature-popup {
+  display: block;
+  z-index: 10000;
+  border: 1px dotted #4B0082;
+  background-color: #FFFFD9;
+  color: inherit;
+}
+
+/*
+-- TABLE STUFF
+*/
+/* .centralTable can be used for almost all tables
+ within the center column; nothing special here  */
+table.centralTable {
+  width: 100%;
+  background: #7f7f7f;
+  border-collapse: separate;
+  border-spacing: 1px;
+  color: inherit;
+  display: table;
+  caption-side: top;
+  overflow: hidden;
+}
+table.centralTable caption, table.centralTable caption a {
+  padding: 3px 1em;
+  color: #fff;	
+  text-align: center;
+  background-color: #7f7f7f; /* IE doesn't like inherit here */
+  margin: 0.5em 2.2em 0 2.2em;
+}
+table.centralTable th {
+  background: url('images/dunkler_verlauf.png') repeat-x;
+  font-weight: normal;
+  font-size: 1.1em;
+  color: #fff;
+}
+table.centralTable th {
+  padding: 3px 10px;
+}
+table.centralTable td {
+  background: #fff;
+  vertical-align: top;
+  padding: 3px;
+  border:1px solid #cfcfcf;
+}
+table.centralTable .pages {
+	font-size:10px
+}
+table.centralTable .center {
+	text-align:center;
+}
+table.centralTable .emptyTable {
+	padding: 10px;
+	font-weight: bold;
+}
+/* .tinyTable can be used as an alternative to
+centralTable. The tables comes out smaller */
+table.tinyTable,
+table.tinyTable th,
+table.tinyTable tr,
+table.tinyTable td, {
+}
+table.tinyTable {
+  caption-side: top;
+  background: transparent;
+  margin: 0 auto 10px;
+  width: 98%;
+}
+table.tinyTable thead, table.tinyTable tfoot {
+  background: #7f7f7f;
+}
+table.tinyTable th, table.tinyTable tfoot tr td {
+  background: url(images/head_black.png) repeat-x;
+  color: #FFFFFF;
+}
+table.tinyTable th {
+  font-weight: normal;
+  padding: .1em .2em;
+}
+table.tinyTable td {
+  font-size: .9em;
+  padding: .2em;
+}
+table.tinyTable caption {
+  font-style: italic;
+  margin-top: 15px;
+}
+/*
+-- USER REGISTRATION
+*/
+span#username_check {
+  color: #ff0000;
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+/*
+-- PM
+*/
+table.centralTable td[headers="pm-topic"] {
+  width: 40%;
+}
+
+#pmtext > p{
+	display: block;
+	text-align: left;
+}
+
+#pmtext > p img{
+	margin: 11px;
+}
+
+#PM-Nav {
+	display: block;
+	text-align: center;
+	margin-top: -38px;
+	margin-left: 170px;
+}
+
+#pmtext table {
+  width: 100%;
+}
+#pmtext td {
+  border: 1px solid #cfcfcf;
+  padding-left: 1em;
+  height: 1.6em;	
+  width: auto;
+  margin: -1.7em 13em;
+}
+#pmtext td:first-child{
+  color: #000;
+  font-weight: bold;
+  background: #D9CB9C;
+  padding-left: 1em;
+  width: 12em;
+  height: 1.6em;
+}
+#pmtext td:first-child:after{
+  content: ":";
+}
+#pmcontent{
+  border: 1px solid #cfcfcf;
+  padding: 1em;
+  margin-top: 3px;
+} 
+/* --- User Profile --- */
+div#usericons,
+div#userinfo,
+div#userfriends {
+  float: left;
+  width: 52%;
+  min-width: 220px !important;
+  max-width: 52%;
+}
+div#userfriends {
+  clear: both;
+}
+div#userpic {
+  text-align: center;
+  vertical-align: middle;
+  width: 42%;
+  min-width: 220px !important;
+  float: right;
+}
+div#userpic > div {
+    min-height: 300px;
+}
+div#userpic img,
+div#userpic img + p {
+    margin-top: 1em;
+    max-width: 100%;
+}
+div#userpic em {
+    display: block;
+    margin-top: 1em;
+}
+div#usericons{
+	  text-align: center;
+}
+div#usericons img{
+	margin: 5px;
+}
+hr.signature {
+    width: 15px;
+    height: 1px;
+    border: solid 1px #cfcfcf;
+    margin: 0.7em auto 0.2em 0;
+}
+div.signature {
+    text-align: left; 
+    margin: 8px; 
+    font-style: italic;
+}
+div.signature p + p {
+    margin-top: .5em;
+}
+#tabcontent > * {
+	padding: 5px;
+}
+#tabcontent p {
+	margin-bottom: .6em;
+	/*padding: 5px;*/
+}
+#userstat dt,
+#usercontact dt {
+	clear: left;
+	float: left;
+	width: 17em;
+}
+#userstat dt:after,
+#usercontact dt:after {
+	content: ":";
+}
+#userstat,
+#usercontact {
+	line-height: 1.5em;
+}
+ul.friendhover {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul.friendhover li {
+  float: left;  /* ohne width - nach CSS 2.1 erlaubt */
+  position: relative;
+  margin: 0 0.5em 0 0;
+}
+* html ul.friendhover li {  /* Korrektur fuer den IE */
+  margin-bottom: -0.4em;
+}
+ul.friendhover li div {
+  position: absolute;
+  top: 3.0em;
+  left: 1.0em;
+  display: none;  /* Unternavigation ausblenden */
+  background: #FFFFFF;
+  z-index: 1000;
+}
+* html ul.friendhover li div {  /* Korrektur fuer IE 5.x */
+  left: -1.5em;
+  lef\t: -0.4em;
+}
+ul.friendhover li:hover div {
+	display: block;  /* Unternavigation in modernen Browsern einblenden */
+	border: 1px solid #000;
+	padding: 5px 5px 5px 5px;
+	text-align: center;
+}
+/*div#content div#usericons {
+  margin-bottom: -1em;
+}*/
+/*div#userfriends h3{
+  display: none;
+}*/
+/* --- User Profile - infobox --- */
+#userinfo dt {
+	clear: both;
+	float: left;
+	width: 44%;
+	margin: 1px auto;
+}
+#userinfo dt:after {
+	content: ':';
+}
+#userinfo dd {
+	float: left;
+	margin: 1px;
+	width: 55%;
+}
+
+#userdiaryentries div.entry {
+    padding: 8px;
+    border-bottom: 1px dotted #000;
+    background: #fff;
+}
+.entrylast {
+    border-bottom: none !important;
+}
+.highlighted {
+	background-color: #f7edbe !important;
+}
+
+table#userguestbook, table#userguestbookpre {
+    width: 100%;
+}
+* + html table#userguestbook, * + html table#userguestbookpre  {
+    margin-top: -1.3em; /* IE needs some margin ... */
+}
+#userguestbook > tbody > tr{
+	border-bottom: 1px dotted #000;
+}
+#userguestbook td.entry, #userguestbookpre td.entry {
+  padding: 1em;
+  vertical-align: top;
+}
+#userguestbook td.entry-value, #userguestbookpre td.entry-value {
+  text-align: center;
+  vertical-align: top;
+  background: #f7edbe;
+  padding: 1em;
+  width: 150px;
+}
+#userguestbook td.entry-value span.symbol, #userguestbookpre td.entry-value span.symbol {
+  font-size: 300%;
+  font-weight: 900;
+  display: block;
+  padding: 0;
+}
+* + html span.symbol {
+    margin-bottom: .3em; /* IE need this? */
+}
+#userguestbook td.entry-value span.description, #userguestbookpre td.entry-value span.description {
+  font-size: 70%;
+  display: block;
+}
+#userguestbook p.info, #userguestbookpre p.info {
+  width: 50px;
+  overflow: visible;
+}
+#userguestbook .info, #userguestbookpre .info {
+  text-align: left;
+  font-weight: bold;
+  float: left;
+}
+#userguestbook p.points, #userguestbookpre p.points {
+  text-align: center;
+  float: right;
+  height: 100%;
+  width: 50%;
+  vertical-align: bottom;
+  margin-top: 3.5em;
+}
+#userguestbook p.date, #userguestbookpre p.date{
+  text-align: left;
+  float: left;
+  font-weight: bold;
+  width: 90%;
+}
+#userguestbook .entrycontent ins, #userguestbookpre .entrycontent ins{
+  border-top: 1px dotted #000; 
+  display: block;
+  font-style: italic;
+  margin-top: 30px;
+}
+#smallworld a {
+	color: #000;
+}
+#smallworld td.user {
+	padding: 5px;
+	border: 1px solid #cfcfcf;
+	text-align: center;
+}
+#smallworld td.arrow {
+	 padding: 10px;
+}
+#guestbookStatsPoints {
+	width: 100%;
+}
+#guestbookStatsPoints caption{
+	padding-bottom: .5em;
+}
+#guestbookStatsPoints th,
+#guestbookStatsPoints td {
+	border-right: 1px solid #333;
+	text-align: center;
+}
+#guestbookStatsPoints th[id="col-points-efficiency"],
+#guestbookStatsPoints td[headers="col-points-efficiency"] {
+	border-right: none;
+}
+
+/*
+-- Groups
+*/
+
+/* margin entfernen, falls padding vorhanden */
+#groups {
+	margin:10px;
+	border:0px solid #cfcfcf;
+	width: 100%;
+	}
+#groups td {
+	padding:12px 0;
+	}
+#groups .image {
+	width: 150px;
+	}
+#groups .name {
+	text-align:center;
+	}
+#groups .name a {
+	font-weight:bold;
+	font-size:14px;
+	}	
+#groups .description .text {
+	display:block;
+	margin-bottom:5px;
+	}
+#groups .description .links {
+	display:inline;
+	padding:0;
+	margin-left:-5px;
+	}
+#groups .description .links li {
+	display:inline;
+	padding:0 5px;
+	}
+
+/* margin entfernen, falls padding vorhanden */
+
+#group-description{
+	min-height: 300px;
+	text-align: justify;
+	}	
+/* Abgetrennter Bereich */
+#group-description #logo {
+	float:right;
+	display: inline;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-left:10px;
+	}
+#group #logo {
+	padding:10px;
+	}
+#group-description p{
+	margin: .5em;	
+}
+
+
+#groupLogoEdit img{
+	margin: 0 auto;
+	display: block;
+}
+
+#groupLogoUpload{
+	margin-left: 0;	
+	margin-top: 0px;
+}
+
+/*
+-- USER MANAGEMENT
+*/
+#tabNavigation {
+    width: 100%;
+    background: #fff;
+    margin: auto auto -5px 1em;
+    border: 0px !important;
+    }
+#tabNavigation ul {
+    padding: 10px 0px 0;
+    border-bottom: 0px solid #cfcfcf;
+    }
+#tabNavigation li {
+	display: block;
+    float: left;
+    }
+#tabNavigation a {
+    padding: 3px 10px 2px;
+    display: block;
+    border: 1px solid #cfcfcf;
+    margin: 0 3px;
+    background: url('images/dunkler_verlauf.png') repeat-x left top;
+    font-weight: bold;
+    color: #fff;
+    }
+#tabNavigation a.active {
+    background: url('images/heller_verlauf.png') repeat-x left top;
+    color: inherit;
+    }
+#tabNavigation a:hover {
+    background: url('images/heller_verlauf.png') repeat-x left top;
+    color: inherit;
+    }
+/*
+-- FRIENDLIST
+*/
+td.friend_drop { vertical-align: top; width: 25%; border: 1px solid black; padding: .5em;}
+table#friends_table { width: 95%; margin: 1em auto auto auto;}
+table#friends_table th { padding: 2px; }
+table#friends_table td img { margin: 2px; border: #cfcfcf 1px solid; padding: 1px; margin-right: .5em; }
+#friendsManagement noscript { text-align: center; }
+#friendsManagement form { margin: 1em auto 1em; width: 49%; }
+#friendsManagement .left { float: left; }
+#friendsManagement .right { float: right; }
+#friendsManagement .friend { cursor: move; }
+#friends_Delete {
+	background: url('/template/unihelp_hp/images/waste.png');
+	width: 200px;
+	height: 200px;
+}
+#friends_Ignore {
+	background: #faa;
+	width: 190px;
+	height: 200px;
+	margin-right: 10px;
+}
+#friends_Ignore h5{
+	font-weight: bold;
+	margin: 5px;	
+}
+
+/**
+-- BOX MANAGEMENT
+*/
+div#box-selection {
+    width: 99%;
+    float: left;
+}
+div#box-selection h4 {
+    padding: 5px;
+}
+div#box-selection div {
+    float: left;
+    width: 30%;
+    padding: 10px;
+}
+ul.config-boxes {
+    border: 1px solid #cfcfcf;
+    padding: 5px;
+}
+ul.config-boxes li {
+    background-image: url('images/box_kopf.png');
+    width: 153px;
+    height: 20px;
+    background-repeat: no-repeat;
+    padding: 4px 0 0 10px;
+    color: #fff;
+	font-size: 0.8em;
+	font-weight: 900;
+}
+.move {
+    cursor: move;
+}
+
+/*
+-- SEARCH RESULTS
+*/
+#searchResults h4 { text-decoration: underline; font-size: 120%; padding: 1em; }
+#searchResults ul { line-height: 1.3em; margin: 0 3em;}
+
+/*
+-- COURSE FILES
+*/
+.file-name {
+	height: 6em;
+}
+.file-name a.file{
+	font-weight: bold;
+	font-size: 1.2em;
+	margin: 0.5em;
+  /* go on with .pdf */
+}
+.file-name p.file{
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-left: 36px;
+}
+.file-info{
+	margin: 10px;
+	float: left;
+	width: 40%;
+}
+.file-info3{
+	width: 100%;
+	display: block;
+	clear: both;
+}
+.file-info li, .file-info2 li{
+	margin: 3px;
+}
+.file-info span, .file-info2 span, .file-info3 span {
+	font-weight: bold;
+}
+.file-info span, .file-info2 span{
+	display: block;
+	float: left;
+	width: 100px;
+}
+.file-rate a{
+	display: block;
+	border: 1px solid #cfcfcf;
+	margin: 0 auto;
+	text-align: center;
+}
+.file-rate dt{
+	clear: both;
+	display: block;
+	float: left;
+	margin: 10px;
+	width: 40%;
+}
+.file-rate dt:after{
+	content: ':';
+}
+.file-rate dd{
+	display: block;
+	float: left;
+	margin: 10px;
+	text-align: right;
+}
+.file-comments{
+	margin: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px #000 dotted;
+}
+.file-comments li {
+	clear: left;
+}
+.file-comments li em{
+	width: 200px;
+	display: block;
+	float: left;
+	border: 0px solid red;
+}
+.file-logoff{
+	font-size: 20px;
+	color: red;
+	font-weight: bold;
+}
+/*** file upload **/
+/* conflicting with upper selector */
+/*div#entryfield {
+  float: left;
+  width: 69%;
+  border-right: 1px solid #2F456A;
+}*/
+div#fileoptions {
+  float: right;
+  width: 29%;
+}
+div#fileoptions input[type=submit]{
+	margin-left: 0;
+}
+
+p.pdf, a.pdf, p.misc, a.misc, p.image, a.image, p.doc, a.doc, p.source, a.source, p.zip, a.zip, p.exe {
+  background-position: left;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+ 
+ p.pdf, a.pdf {
+  background-image: url('images/icon-pdf.gif');
+}
+ p.misc, a.misc {
+  background-image: url('images/icon-misc.gif');
+}
+ p.image, a.image {
+  background-image: url('images/icon-image.gif');
+}
+ p.doc, a.doc {
+  background-image: url('images/icon-msword.gif');
+}
+ p.source, a.source {
+  background-image: url('images/icon-source.gif');
+}
+ p.zip, a.zip {
+  background-image: url('images/icon-zip.gif');
+}
+ p.exe {
+  background-image: url('images/icon-exe.gif');
+}
+/*
+-- COURSE FILES RATINGS
+*/
+
+#course-rating-all td{
+	padding: 5px;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+#course-rating-all th:first-child{
+	text-align: left;
+}
+
+#course-rating-all td:first-child{
+	vertical-align: top;
+}
+
+#course-rating-all tbody tr{
+	border-top: 1px dotted #cfcfcf;
+}
+
+/*
+-- COURSE
+*/
+ #course-forum {
+ 	width: 47.5%;
+ 	min-width: 47.5%;
+ 	float: left;
+ }
+ #course-forum .course-thread a,
+ #course-files .course-file a, 
+ #course-files .course-thread a,  
+ #course-files-revisions .course-file a.courseFileDownload {
+ 	font-weight: bold;
+ }
+ #course-files .course-file a.courseFileDownload,
+ #course-files-revisions .course-file a.courseFileDownload {
+	background-repeat: no-repeat;
+	display: block;
+	height: 36px;
+	padding-left: 40px;
+ }
+ #course-forum .course-thread p, #course-files dd,  #course-files .course-thread p{
+ 	width: 100%;
+ 	text-align: right;
+ 	margin-top: -0.2em;
+ 	border: 0 solid red;
+ 	font-size: 0.8em;
+ 	
+ }
+ #course-forum .course-thread p a, #course-files .course-thread p a{
+ 	font-weight: normal;
+ }
+.course-thread span.caption {
+    float: left;
+}
+.course-thread span.page {
+    float: right;
+    font-size: 0.8em;
+}
+li.course-thread {
+    margin-top: .5em;
+}
+#course-files{
+ 	width: 48%;
+ 	min-width: 48%;
+ 	float: right;
+ }
+#course-files h3{
+	background-image: none;
+}
+#course-files-revisions {
+	margin-left: 3em;
+}
+
+.webcam {
+	text-align: center;
+	padding: 8px;
+}
+
+/*
+-- USER SEARCH
+*/
+/* Suchformular */
+fieldset#usersearch .ra {
+	text-align:right;
+	width:40%;
+}
+fieldset#usersearch .w100 {
+	width:100px;
+}
+fieldset#usersearch .w200 {
+	width:200px;
+}
+
+/* Suchergebnisse */
+fieldset#results1 .navi {
+	text-align:center;
+	margin:25px 0;
+}
+fieldset#results1 table {
+	margin:0 4%;
+	width:92%;
+}
+fieldset#results1 table tr {
+	border-bottom:1px solid #cfcfcf;
+}
+fieldset#results1 table td {
+	padding:20px 0;
+}
+fieldset#results1 .imgtd {
+	padding-left:30px;
+	width:20%;
+}
+fieldset#results1 dt {
+	clear:both;
+	float:left;
+	width:45%;
+	font-weight:bold;
+}
+.compact{
+	width: 24%;
+	float: left;
+	text-align: center;
+	height: 80px;
+	position: relative;
+}
+.compact span {
+	position: absolute;
+	left: 10%;
+}
+
+/*
+-- FORMAT OPTIONS FOR ALL KIND OF ENTRIES
+*/
+.entry p + p {
+    margin-top: 1em;
+}
+.entry img {
+  max-width: 100%;
+}
+.entry div.imgattachments {
+  max-width:100%; 
+  overflow:hidden;
+}
+td.ln {
+  vertical-align: top;
+}
+.entry td.source pre {
+  width: 100%;
+  overflow: scroll;
+}
+.entry cite {
+  margin-left: 2em;
+}
+.entry span.quoteAuthor{
+  font-size: 0.8em;
+  margin-top: 1em;	
+  display: block;
+}
+.entry blockquote {
+/*  background: #ddd;*/
+	background: #efe7d1;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding-left: 1em;
+  margin: 0.1em 1em 0.5em 1em;
+}
+.entry blockquote blockquote {
+/*  background: #e7e7e7;*/
+	background: #f7f1e1;
+}
+.entry blockquote blockquote blockquote {
+/*  background: #f3f3f3;*/
+	background: #faf6eb;
+}
+.entry span.date {
+  float: left;
+  font-weight: bold;
+  max-width: 280px;
+  width: 60%;
+}
+#userdiary .entry span.date {
+  max-width: 400px;
+}
+.entry span.button {
+  float: right;
+  clear: right;
+  width: 39%;
+  text-align: right;
+}
+.entry .entrycontent {
+  clear: both;
+}
+#userguestbook .entry .entrycontent {
+  padding-top: .5em;
+}
+
+/* mark "last updated by" */
+.entry ins {
+  font-style: italic;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+.entry ol {
+	margin: 10px auto 10px 2em;
+}
+
+.entry ul {
+	list-style: disc;
+	margin: 10px auto 10px 2em;
+}
+table.source {
+	margin-left: 1em;
+	background-color:#f0f9ff;
+	border: 1px solid black;
+	font-size: 1.2em;
+}
+table.source td.ln {
+	width: 40px;
+}
+table.source td.source {
+	vertical-align: top;
+}
+
+/* source code highlighting */
+table.source .html_entity {
+    color: red;
+}
+table.source .xml_pi {
+    color: blue;
+}
+table.source .xml_tag {
+    color: navy;
+}
+table.source .keyword {
+    color: navy;
+}
+table.source .comment {
+    color: green;
+}
+table.source .literal {
+    color: purple;
+}
+table.source .sch_literal {
+    color: green;
+}
+	
+/* AJAX schnick schnack */
+div.autocomplete {
+  position:absolute;
+  width: 142px !important;
+  background-color: #fff;
+  z-index: 1005;
+/*  border: 1px solid #888;*/
+}
+div.autocomplete ul {
+ border: 1px solid #888;
+}
+div.autocomplete ul li.selected { background-color: #ffb;}
+div.autocomplete ul li {
+  display:block;
+  padding:2px;
+  height:32px;
+  width: 138px;
+  cursor:pointer;
+}
+
+/********* faq **************************/	
+
+#faq ul{
+	margin: 5px;
+	font-size: 1.1em;
+}
+#faq ul a{
+	font-size: 1.2em;
+}   
+#faq ul li ul a{
+	font-size: 1.0em;
+	margin-left: 40px;
+}    
+#faq ul li{
+	margin: 3px;
+	}
+#faq h4{
+	margin-top: 1em;
+}	
+#faq dl{
+	margin: 5px;
+}
+#faq dt{
+	font-size: 1.2em;
+	margin: .5em;
+}
+#faq dd{
+	margin-left: 40px;
+	text-align: justify;
+}
+.totopofpage{
+	font-weight: bold;
+}
+#whatisnew p{
+    margin: .6em;
+}
+/**** forum ***********************/
+.th-page{
+	text-align: right;
+}
+.centralTable th a{
+	color: #000;	
+}
+.thread-entry-edit{
+	float: right;
+	/*margin-top: -1em;  */
+} 
+.thread-entry-body td{
+	padding: 5px;
+}
+.opener{
+	font-weight: bold;
+}
+.opener img{
+	float: right;
+	margin: 0 0 1em 1em;	
+}
+.select select{
+	width: 70px;
+	text-align: right;
+}
+.select select option{
+}
+.centralTable .thread-entry-title td {
+     background: #eee;
+     color: #000;
+     font-size:0.8em;
+}
+.centralTable .thread-entry-title .thread-entry-date {
+     float:left;
+}
+.centralTable .thread-entry-title .thread-entry-edit {
+     float:right;
+}
+.centralTable .thread-entry-body .author {
+     background: #F7EDBE
+}
+.centralTable .thread-entry-body .author img {
+     margin-top: 3px;
+}
+.centralTable .thread-entry-body .author .info {
+     font-size:0.8em;
+}
+
+.centralTable .thread-entry-body .author .forumVoting{
+	display: block;
+}
+
+.centralTable .thread-entry-body .author .forumVoting a img{
+	margin-bottom: 14px !important;
+}
+
+.centralTable .thread-entry-body .entry {
+     text-align: justify;
+     padding: 0.6em;
+}
+.centralTable .thread-entry-body .entry h5{
+	font-weight: bold;
+	margin: .5em;
+}
+/******** forum *********/
+
+#entry label {
+  float: left;
+  width: 60%;
+  margin-right: -2em;
+  padding-bottom: 0.2em;
+  text-align: left;
+  border-bottom: 1px dotted #cfcfcf;
+}
+#entry input[type=checkbox] {
+  margin-left: 1%;
+  margin-top: 4px;
+  margin-bottom: 0.6em;
+}
+#entry input[type=submit] {
+	margin-left: .5em;
+}
+#entryfield h5{
+	color: #886944;
+	font-weight: bold;
+}
+/*************** /forum ***************/
+
+
+
+/************** news **************/
+
+#news{
+	margin-top: 28px !important;
+}
+* + html #news{
+	margin-top: 3px !important;
+}
+.news {
+	padding: 0 10px;
+	padding-bottom: 20px;
+	border-bottom: solid 1px #333;
+	margin-top: -20px;
+}
+.news h4 {
+	line-height:normal;
+	text-align: left;
+}
+.news h4 a{
+	font-size: 1.2em;
+}
+.daymarker {
+	margin-top:20px;
+	text-align:right;
+	margin-bottom: 0px;
+	margin-right: 1em;
+}
+.daymarker span {
+	border-bottom: 1px solid #CFCFCF;
+	font-weight:bold;
+}
+.newssub{
+	font-size: 0.8em;	
+}
+.news .entry img{
+	float: right;
+	margin: 0 0 1em 1em;	
+}
+#NewsDel{
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 1em 0;
+	display: block;
+}
+/************** /news *************/
+
+/************ course import *******/
+.import input {
+    float: none;
+}.import li label {
+    width: 70%;
+}
+/************ /course import *******/
+
+/************ event *************/
+
+table#eventcalendar {
+	width: 100%;
+}
+table#eventcalendar td {
+	border: 1px solid black;
+	vertical-align: top;
+	height: 9em;
+}
+table#eventcalendar td li {
+	font-weight: bold;
+	padding: 3px;
+}
+table#eventcalendar th {
+	border: 1px solid black;
+	text-align: center;
+}
+table#eventcalendar td.sunday,
+table#eventcalendar th.sunday {
+	background-color: #f7edbe;
+}
+table.event {
+	width: 100%;
+}
+table.event td.attribute {
+	width: 11em;
+	font-weight: bold;
+	vertical-align: top;
+	text-align: right;
+	padding-right: 1em;
+}
+
+/************ /event ************/
+
+/************** imprint **************/
+#content .imprint div {
+	padding: 10px;
+}	
+#content .imprint p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#content .imprint ol {
+    list-style-position: inside;
+	margin-left: 1em;
+}
+#content .imprint li {
+    list-style-position: inside;
+	margin-top: .5em;
+}
+#content .imprint dd{
+	margin-left: 10px;
+}
+.status {
+	margin-bottom: -5px;
+}
+#content .imprint p,
+#content .imprint li,
+#content .imprint dd {
+	text-align: justify; /* that kind of a fucking browser, called internet explorer, gets into trouble counting the list items when there is a max-width defined */
+}
+/************** /imprint **************/
+
+/************** /support **************/
+
+#support input[type=text]{
+	width: 50.5%;	
+}
+#support textarea{
+	width: 50%;	
+}
+/************** /support **************/
+
+/************** /toolbar **************/
+#toolbar {
+  background: url(/images/toolbar/tb_gesamt_vertikal.png) right top no-repeat;
+  min-height: 1025px;
+  padding: 20px;
+  padding-right: 30px;
+  position: relative;
+  margin-top: 0;
+}
+#toolbar .install {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 1em;
+}
+#toolbar img {
+  margin: 10px;
+  float: right;
+}
+/************** /toolbar **************/
+
+/************** sports **************/
+ul.sports-action li {
+  float: left;
+  padding: 5px 1em;
+}
+.bet .gamelist {
+    float: left;
+    margin-left: 1em;
+}
+.bet img {
+    float: right;
+}
+#content #fussball h4 {
+  margin: 0 0 5px 0;
+}
+#fussball td.right {
+  text-align: right;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+#fussball td.left {
+  padding-left: 5px;
+}
+#fussball option {
+  padding-left:   30px; 
+  padding-bottom: 5px;
+  background-repeat: no-repeat;
+}
+#fussball .tippgame input{
+    float: none;
+}  
+#fussball tr.nearFuture td {
+    background-color: #c63;
+}
+
+/************** sports **************/
+}

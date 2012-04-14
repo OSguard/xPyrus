@@ -1,0 +1,35 @@
+project_name:
+{$smarty.const.PROJECT_NAME}
+
+project_domain:
+xPyrus.org
+
+project_title:
+the network
+
+project_subtitle:
+Auch in Springfield
+
+project_start_year:
+2008
+
+project_organisation:
+UniHelp e. V.
+
+welcome_text:
+Auf Springfields größtem unabhängigen Internetportal könnt Ihr kostenlos Unterlagen tauschen, Freunde treffen und über Gott und die Welt diskutieren. Fragen stellen, Antworten bekommen, die neuesten Dinge über die Uni und FH erfahren &ndash; alles kein Problem!</p><p class="clear margin">Außerdem gibt’s die aktuellen Partydates und viele nette Leute, die Euch kennenlernen wollen!
+
+help_registration:
+Nur mit der richtigen EMail kommst du hier rein.
+
+faq_formation:
+2008 wurde xPyrus Open-Source.
+
+faq_whyuniemail:
+Wir lassen nicht jeden rein, das wird über die Email kontrolliert.
+
+faq_getmail:
+Entweder hast du ne Email oder nicht.
+
+help_organisation:
+Hier sind alle wichtigen Organisation aus der Stadt vertreten.

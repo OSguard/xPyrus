@@ -1,0 +1,11 @@
+#
+# $Id: .htaccess 309 2005-09-30 22:24:09Z ads $
+#
+order deny,allow
+allow from all
+
+# deny access to template files
+<Files ~ ".*\.tpl">
+    order allow,deny
+    Deny from all
+</Files>

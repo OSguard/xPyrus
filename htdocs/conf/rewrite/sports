@@ -1,0 +1,13 @@
+#^em2008$ /index.php?mod=sports&method=soccerBet
+#^em2008/user/((?:[^/]|\x20)+)$ /index.php?mod=sports&method=soccerBetUser&username=$1
+#^em2008/ranking$ /index.php?mod=sports&method=soccerBetRanking
+#^em2008/stat(\d+).svg$ /index.php?mod=sports&method=soccerBetStats&game=$1&view=ajax
+#^em2008/statlive(\d+).svg$ /index.php?mod=sports&method=soccerBetStats&game=$1&live=1&view=ajax
+
+^sports$ /index.php?mod=sports&method=home
+^sports/bet/(\d+)$ /index.php?mod=sports&method=soccerBet&tournament=$1
+^sports/bet/(\d+)/ranking$ /index.php?mod=sports&method=soccerBetRanking&tournament=$1
+^sports/stat(\d+).svg$ /index.php?mod=sports&method=soccerBetStats&game=$1&view=ajax
+^user/((?:[^/]|\x20)+)/bet/(\d+) /index.php?mod=sports&method=soccerBetUser&username=$1&tournament=$2
+
+^i_am_god/sports/(\d+)$ /index.php?mod=sports&method=soccerBetAdmin&tournament=$1

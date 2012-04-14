@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /userfiles/
+Disallow: /user/
+Disallow: /pm/
+Disallow: /user_online/
+Disallow: /attachments/
+Disallow: /usersearch
+Disallow: /toolbar
+Disallow: /toolbarupdate
+Disallow: /shoutboxupdate
+Disallow: /index.php
+Crawl-Delay: 30
+# no google images please
+User-Agent: Googlebot-Image
+Disallow: /

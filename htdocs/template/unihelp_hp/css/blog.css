@@ -1,0 +1,755 @@
+@media all {
+* {	font-family: "Gentium", "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", "Lucida", Verdana, "Bitstream Vera Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+img { border: 0; }
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+ul {
+	list-style: none;
+}
+body {
+	font-size:100.01%;
+	text-align: center;
+}
+html > body {font-size:100.01%;}
+a {
+  color: #998F80;
+  background: transparent;
+  text-decoration: none;
+}
+a:link { }
+a:visited { }
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+a:active { }
+
+#page { 
+  width: 800px;
+  margin: 5px auto 0;
+  font-size: 0.9em;
+  line-height: 1.4em;
+  text-align: left;
+}
+
+#title {
+	position:relative;
+	width: 800px;
+	height: 100px;
+	margin: 0 auto 10px auto;
+	text-align: center;
+	color: #ffffff;
+	background: transparent url('images/header_neu.png') -150px 0 no-repeat;
+	display: block;
+}
+/* Layout-Elements */
+.hidden span {
+  display: none;
+}
+
+#title a.hidden {
+  background: url('images/weblogo.png') no-repeat transparent center center;
+  height: 100px;
+  width: 239px;
+float: left;
+}
+
+#title a {
+	color: #ffffff;
+	text-decoration: none;
+}
+#title h2 {
+	font-size: 2em;
+	margin-top: 0;
+	padding-top: 25px;
+	font-weight: bold;
+}
+#title h3 {
+	font-size: 1em;
+	padding-top: 30px;
+	font-weight: bold;
+}
+#title h3 a {
+	color: #333;
+}
+
+#content {
+	width:595px;
+ 	margin:0 1px 10px 0;
+ 	padding:0 0 8px 0;
+	float:left;
+	border-left: 1px dashed #635838;
+}
+#content.fullcontent{
+	width:800px;
+	border-left: none;
+}
+
+#content h4 {
+	font-size: 1.2em;
+}
+
+#content h4 a {
+	color: #000;
+}
+	
+/*
+ * MISC HELPERS
+ */
+/* need this due to IE that doesn't understand e.g. '+' selector */
+.clear {
+  clear: both;
+}
+
+.center {
+  text-align: center;
+}
+.nopadding {
+    padding: 0 !important;
+}
+.padding{
+	padding: 5px;	
+}
+.nomargin {
+    margin: 0 !important;
+}
+.margin{
+	margin: 5px;	
+}
+.nofloat {
+    float: none !important;
+}
+
+
+/*
+-- ERROR HANDLING 
+*/
+/* TODO? - make nicer */
+.errorbox {
+  border-color: red !important;
+}
+.errorbox h3 {
+  background-color: red;
+  color: white;
+  padding: .3em .5em .3em;
+}
+.errorbox ul {
+  padding: 1em 2em;
+  list-style: disc;
+}
+span.missing select {
+    background-color: red;
+    color: white;
+}
+span.missing label  {
+    font-weight: bold;
+    color: red;
+}
+h5.missing {
+    font-weight:bold;
+    color: red; 
+}
+	
+/*
+-- Anzeige eines normalen Tages in einer Box
+*/
+.shadow {
+    border: 1px solid #efefef;
+    -moz-border-radius: 8px;
+    background-color: #dfdfdf;
+    filter:progid:DXImageTransform.Microsoft.Glow(Color=#cfcfcf,Strength=1);
+    margin: 36px 5px 5px;
+    position: relative;
+}
+.shadow > div{
+    border: 1px solid #cfcfcf;
+    margin: 1px;
+    background: #fff;
+    padding: 8px;
+    position: relative;
+}
+.shadow h3 {
+    padding: 3px 10px 0;
+    border: 1px solid #cfcfcf;
+    margin: 0 3px;
+    background: url('images/heller_verlauf.png') repeat-x left top;
+    font-weight: bold;
+    font-size: 1em;
+    border-bottom: none;
+    position: absolute;
+    top: -1.7em;
+    left: 8px;
+}
+.shadow h3 > a {
+	color: inherit;
+}
+	
+div.blogbox, div.bloginfobox {
+  margin: 40px 20px 30px;
+}
+
+div.blogbox h4 {
+	margin: 10px .7em 15px;
+	text-decoration: underline;
+}
+div.blogbox p.additionalinfo + h4 {
+	margin-top: 25px;
+}
+
+div.bloginfobox h4 {
+	margin: 15px 1em 15px;
+}
+div.bloginfobox h5 {
+	font-size: 1em;
+}
+div.bloginfobox dl {
+	margin-left: 2em;
+}
+div.bloginfobox dl dt {
+	font-weight: bold;
+	font-size: .8em;
+}
+div.bloginfobox dl dt {
+	clear: left;
+	float: left;
+	width: 8em;
+}
+div.bloginfobox form label,
+div.bloginfobox form input,
+div.bloginfobox form textarea{
+	font-family: Verdana, Geneva, Arial, Helvetiva, sans-serif;
+}
+
+div.preview {
+  border: 1px dotted #aaa;
+  width: 555px;
+}
+div.preview h4 {
+  margin-top: 5px;
+}
+
+#trackback_uri {
+	text-align: center;
+}
+
+ul#commentlist li {
+	border-top: 1px solid #aaa;
+	background-color: #fcfaf8;
+}
+ul#commentlist li.last {
+	border-bottom: 1px solid #aaa;
+}
+ul#commentlist a.comment {
+    color: inherit;
+}
+
+p.additionalinfo {
+ 	font-size: 0.8em; 
+	text-align: center;
+	margin: .4em 2em 0;
+}
+
+p.footer {
+  text-align: center;
+  font-size: .9em;
+  padding-top: 15px;
+}
+
+ol#create_steps {
+	margin-left: 2em;
+}
+ol#create_steps li {
+	padding: .5em;
+}
+ol#create_steps a {
+	color: #016978;
+}
+
+/* FORM STUFF */
+	label,
+input[type=submit],
+input[type=reset] {
+  cursor: pointer;
+}
+form br {
+  clear: both;
+}
+fieldset {
+  padding: .5em;
+  margin: .5em;
+  border: 1px solid #cfcfcf;
+}
+label {
+  float: left;
+  width: 35%;
+  margin-right: .5em;
+  text-align: right;
+}
+input,
+textarea {
+  float: left;
+  margin-bottom: .6em;
+  margin-right: .5em;
+}
+input[type=submit],
+input[type=reset] {
+  margin-left: 35%;
+  margin-top: 4px;
+}
+input[type=submit] {margin-left: 15em;}
+input[type=submit] + input[type=submit],
+input[type=text] + input[type=submit],
+input[type=reset] {
+  margin-left: .3em;
+}
+input[type=text] + input[type=submit] {
+  margin-top: -.2em;
+}
+input[type=radio] + label,
+input[type=checkbox] + label {
+  margin-left: 0.3em;
+  width: auto;
+  max-width: 40%;
+  text-align: left;
+  float: left;
+}
+label.hidden {
+  display: none;
+}
+input[type=text],
+input[type=password],
+textarea {
+  background-color: #efe7d1;
+  color: #000000;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus {
+  background-color: #FFFFFC;
+  color: #000000;
+}
+fieldset legend {
+  font-size: 1.2em;
+  color: #c7ad66;
+  background-color: transparent;
+  font-weight: bold;
+  padding: 0 .5em;
+}
+#left fieldset,
+#right fieldset {
+  border: 0;
+  margin: 3px;
+}
+#left input[type=submit],
+#right input[type=submit] {
+  margin-left: 0;
+}
+input.wide {
+    width: 20em;
+}
+select.wide {
+    width: 25em;
+}
+/* enhanced form/input elements */
+#entryfield {
+  border: none;
+  width: 77%;
+  margin-right: 20%;
+  padding-left: 1%;
+  padding-bottom: 10px;
+}
+#entryfield fieldset {
+  margin: 0em;
+  margin-top: 10px;
+  padding: 1em;
+}
+/* file upload area needs special width ... */
+#entryfield.smallentryfield {
+  width: 69%;
+  border-right: 1px solid #000;
+}
+#entryfield input[type="radio"],
+#entryfield input[type="text"],
+#entryfield input[type="submit"],
+#entryfield input[type="checkbox"] {
+  margin-left: 0;
+}
+#entryfield label{
+  width: auto;
+}
+
+#entryfield input, textarea{
+	border: 2px solid #c7ad66;
+	border-style:inset;
+	padding: 0.1em;
+	padding-left: 0.3em;
+	background: #efe7d1;
+}
+#entryfield input[type=text],#entryfield textarea{
+	width: 95%;
+}	
+#pluspunkt{
+	width: 0.7em !important;	
+}
+#entryfield input:focus, textarea:focus {
+    background: #fffffc;
+}
+#entryfield input[type=submit], .filterbutton {
+	background: url('images/button.png');
+	float: left;
+	height: 22px;
+	border: 2px solid #c7ad66;
+	border-style:outset;
+}
+#entryfield h5 {
+  display: inline;
+  margin-left: .5em;
+}
+/* input options */
+#entryoptions{
+    background: #eee;
+    margin: 0 0 10px 0;
+    padding: 7px 0 0 0;
+    border: none;
+    height: 32px;
+}
+#entryoptions h4{
+    display: none;
+}
+#entryoptions h5{
+    display: none;
+}
+#entryoptions p, 
+#entryoptions select {
+    float:  left;
+    margin: auto 10px;
+}
+/** div#entryoptions img {
+    display: inline;
+    } commented out by Hendrik */
+#entryoptionsmileys {
+	float: right;
+    width: 18%;
+    border: 1px solid #cfcfcf;
+	margin: 10px 1% 0px 0px;
+}
+#entryoptionsmileys select{
+	width: 90%;
+	margin: 5px auto;	
+	border: 1px solid #000;
+}
+#entryoptionsmileys h5{
+	color: #000;
+	font-size: 0.8em;
+}
+#entryoptionsmileys p{
+	float: right;
+	width: 100%;
+}
+#entryoptionsmileys .distance-top {
+	margin-top: 1.5em;
+}
+
+/* specifiv form stuff */
+#content fieldset {
+  margin: 1em;
+  padding: .5em;
+}
+
+
+/* SIDEBAR STUFF */
+
+/* container for sidebar */
+#sidebar {
+	display: inline; /* ie win bugfix */
+	float: right;
+	width:190px;
+	padding:0 0 8px 0;
+	margin: 0 0 10px 3px;
+}
+
+div#sidebar h4 {
+  font-size: 0.9em;
+  font-weight: bold;
+  height: 20px;
+  color: #FFFFFF;
+  background: url(images/dunkler_verlauf.png) bottom left repeat-x;
+  margin: 10px 0 0 0;
+  padding: 2px 0 0 10px;
+}
+
+div#sidebar .boxcontent {
+  /*margin: 5px 5px;*/
+  padding: 5px;
+}
+
+div#sidebar div.box {
+   background: #fff;
+   padding-bottom: 20px;
+   border-bottom: 2px solid #798299;
+   border-left: 2px solid #798299;
+}
+
+div#sidebar div.box img {
+	margin-right: 5px;
+}
+div#sidebar li {
+	margin-left: .5em;
+}
+div#sidebar a {
+	color: #333 !important;
+}
+/* special widgets in the sidebar */
+
+div#calendarhead {
+	text-align: center;
+	position:relative;
+}
+div#calendarhead a#cback, a#cforward {
+	width: 16px;
+	height: 12px;
+	display: block;
+	margin: 2px 5px;
+	position: absolute;
+	top: 5px;
+}
+div#calendarhead a#cmonth {
+	color: #000;
+}
+#calendar a#cback {
+	left: 5px;
+	background: url(images/arrow_back.gif) no-repeat transparent;
+}
+#calendar a#cforward {
+	right: 5px;
+	background: url(images/arrow_forward.gif) no-repeat transparent;
+}
+
+#calendar table {
+  width: 99%;
+}
+#calendar table td {
+  text-align:center;
+}
+#calendar table a {
+  font-weight: bold;
+  font-size: 110%;
+  text-decoration: underline;
+}
+#calendar table td {
+  text-align:center;
+}
+#calendar table td.today {
+	border: 2px solid #89c1c9;
+}
+#calendar table td.today a {
+  color: #000;
+}
+
+
+/*
+-- FORMAT OPTIONS FOR ALL KIND OF ENTRIES
+*/
+.entry p + p {
+    margin-top: 1em;
+}
+.entry img {
+  max-width: 100%;
+}
+.entry div.imgattachments {
+  max-width:100%; 
+  overflow:hidden;
+}
+.entry td.source pre {
+  width: 100%;
+  overflow: scroll;
+}
+.entry cite {
+  margin-left: 2em;
+}
+.entry span.quoteAuthor{
+  font-size: 0.8em;
+  margin-top: 1em;	
+  display: block;
+}
+.entry blockquote {
+  background: #ddd;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding-left: 1em;
+  margin: 0.1em 1em 0.5em 1em;
+}
+.entry blockquote blockquote {
+  background: #e7e7e7;
+}
+.entry blockquote blockquote blockquote {
+  background: #f3f3f3;
+}
+/* mark external links */
+.entry a[target ~= "_blank"] {
+  font-family: Georgia, Garamond, 'Palatino Linotype', Times, serif;
+  background: url('/images/icons/tab_go.png') no-repeat top right;
+  padding-right: 16px;
+  margin-right: 2px;
+}
+/*.entry:lang(de) a[target ~= "_blank"]:after {
+  content: "{externer link}";
+}
+.entry:lang(en-us) a[target ~= "_blank"]:after {
+  content: "{external link}";
+}*/
+.entry span.date {
+  float: left;
+  font-weight: bold;
+  max-width: 280px;
+  width: 60%;
+}
+#userdiary .entry span.date {
+  max-width: 400px;
+}
+.entry span.button {
+  float: right;
+  clear: right;
+  width: 39%;
+  text-align: right;
+}
+.entry .entrycontent {
+  clear: both;
+}
+#userguestbook .entry .entrycontent {
+  padding-top: .5em;
+}
+
+/* mark "last updated by" */
+.entry ins {
+  font-style: italic;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+.entry ol {
+  margin-left: 2em;
+}
+
+.entry ul {
+	list-style: disc;
+	margin-left: 2em;
+}
+table.source {
+	margin-left: 1em;
+	background-color:#f0f9ff;
+	border: 1px solid black;
+	font-size: 1.2em;
+}
+table.source td.ln {
+	width: 40px;
+}
+table.source td.source {
+	vertical-align: top;
+}
+
+/* source code highlighting */
+table.source .html_entity {
+    color: red;
+    }
+table.source .xml_pi {
+    color: blue;
+    }
+table.source .xml_tag {
+    color: mediumblue;
+    }
+table.source .keyword {
+    color: mediumblue;
+    }
+table.source .comment {
+    color: green;
+    }
+table.source .literal {
+    color: purple;
+    }
+table.source .sch_literal {
+    color: green;
+    }
+
+}
+/*
+ * tab navigation
+ */
+#tabNavigation {
+    width: 100%;
+    background: #fff;
+    margin: auto auto -5px 1em;
+    border: 0px !important;
+    }
+#tabNavigation ul {
+    padding: 10px 0px 0;
+    border-bottom: 0px solid #cfcfcf;
+    }
+#tabNavigation li {
+	display: block;
+    float: left;
+    }
+#tabNavigation a {
+    padding: 3px 10px 0;
+    display: block;
+    border: 1px solid #cfcfcf;
+    margin: 0 3px;
+    background: url('images/dunkler_verlauf.png') repeat-x left top;
+    font-weight: bold;
+    color: #fff;
+    }
+#tabNavigation a.active {
+    background: url('images/heller_verlauf.png') repeat-x left top;
+    color: inherit;
+    }
+#tabNavigation a:hover {
+    background: url('images/heller_verlauf.png') repeat-x left top;
+    color: inherit;
+    }
+    
+/*
+ * footer
+ */    
+#footer {
+  background: url('images/menue.png') no-repeat top center;
+  clear: both;
+  font-size: .8em;
+  padding: 5px 0 2px 0;
+  margin-top: 5px;
+}
+#footer ul {
+  display: block;
+  margin-left: 163px; /* same as left column */
+}
+#footer p {
+  padding: 0 10px 0 0;
+  margin-left: 163px; /* same as left column */
+}
+#footer li {
+  display: block;
+  float: left;
+}
+#footer li a {
+  display: block;
+  text-align: center;
+  padding: 0 5px;
+  width: 100%;
+  height: 100%;
+  color: #998F80;
+}
+
+/*
+ * comment notification
+ */
+div.bloginfobox form label {
+  font-size: 85%;
+  width: 50%;
+}
+div.bloginfobox form input#change-notification,
+div.bloginfobox form select {
+  margin: 0;
+  float: left;
+}

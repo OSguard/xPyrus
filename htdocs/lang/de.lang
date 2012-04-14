@@ -1,0 +1,603 @@
+// - strings from ads script
+//
+aim=AIM
+aimNumber=AIM-Nummer
+abort=Abbrechen
+abbreviation=Abkürzung
+submit=Abschicken
+sender=Absender
+warning=Achtung
+address=Adresse
+action=Aktion
+actions=Aktionen
+activity=Aktivität
+upToDateness=Aktualität
+uptodate=Aktuell
+preface=Allgemeines
+age=Alter
+oldtown=Altstadt
+provider=Anbieter
+angola=Angola
+attachment=Anhang
+create=Anlegen
+instruction=Anleitung
+signOn=Anmelden
+login=Anmeldung
+suggestions=Anregungen
+contactPerson=Ansprechpartner
+quantity=Anzahl
+aqua=Aqua
+archive=Archiv
+argentina=Argentinien
+artist=Artist
+logged=Aufgezeichnet
+accessRight=Auskunftsrecht
+orientation=Ausrichtung
+australia=Australien
+author=Autor
+authors=Autoren
+award=Award
+awards=Awards
+edit=Bearbeiten
+editOptions=Bearbeitungsoptionen
+encounter=Begegnung
+example=Beispiel
+examples=Beispiele
+post=Beitrag
+posts=Beiträge
+remark=Bemerkung
+description=Beschreibung
+subject=Betreff
+businessEconomists=Betriebswirte
+application=Bewerbung
+rate=Bewerten
+rating=Bewertung
+ratings=Bewertungen
+relationship=Beziehung
+relationships=Beziehungen
+pictures=Bilder
+blue=Blau
+justification=Blocksatz
+blogosphere=Blogosphäre
+boxes=Boxen
+boxConfiguration=Boxenkonfiguration
+brasilia=Brasilien
+bugs=Bugs
+caesar=Caesar
+code=Code
+community=Community
+contentType=Content-Type
+contentmanager=Contentmanager
+filename=Dateiname
+dataProtection=Datenschutz
+date=Datum
+duration=Dauer
+germany=Deutschland
+issuesForDiscussion=Diskussionsthemen
+downloads=Downloads
+email=E-Mail
+emailAddress=E-Mail-Adresse
+settings=Einstellungen
+entry=Eintrag
+entryFilter=Eintragsfilter
+recipient=Empfänger
+england=England
+enter=Enter
+result=Ergebnis
+resultDisplay=Ergebnisanzeige
+additionalElements=Ergänzendes
+floor=Etage
+eventCalendar=Event-Kalender
+eventLink=Event-Link
+eventmanager=Eventmanager
+faq=FAQ
+course=Fach
+family=Familie
+color=Farbe
+fax=Fax
+features=Features
+feed=Feed
+error=Fehler
+bold=Fett
+heavyPrint=Fettdruck
+filterReset=Filter-Reset
+filter=Filtern
+browserFirefox=Firefox-Browser
+boards=Foren
+formatCode=Formatcode
+formattings=Formatierungen
+formatSettings=Formatierungseinstellungen
+form=Formular
+board=Forum
+boardSearch=Forumsuche
+picture=Foto
+france=Frankreich
+friends=Freunde
+friendlist=Freundesliste
+friendship=Freundschaft
+fuchsia=Fuchsie
+funk=Funk
+courses=Fächer
+courseBoard=Fächer-Forum
+courseList=Fächerliste
+courseOverviewPage=Fächerübersichtsseite
+birthday=Geburtstag
+birthdayPeople=Geburtstagskinder
+secret=Geheim
+yellow=Gelb
+communityThreads=Gemeinschafts-Threads
+general=Generelles
+georgia=Georgia
+sex=Geschlecht
+ghana=Ghana
+gray=Grau
+big=Groß
+reason=Grund
+groundPlan=Grundriß
+groups=Gruppen
+groupBoard=Gruppen-Forum
+size=Größe
+bigger=Größer
+green=Grün
+guestbook=Gästebuch
+guestbookStatistics=Gästebuchstatistik
+validityPeriod=Gültigkeitsdauer
+hello=Hallo
+cellnumber=Handynummer
+mainStudyCourse=Hauptstudiengang
+house=Haus
+congratulations=Herzlichen Glückwunsch
+help=Hilfe
+add=Hinzufügen
+history=Historie
+upload=Hochladen
+university=Hochschule
+homepage=Homepage
+icq=ICQ
+icqNumber=ICQ-Nummer
+icon=Icon
+iconLink=Icon-Link
+icons=Icons
+ignorelist=Ignore-Liste
+imprint=Impressum
+info=Info
+infopage=Infopage
+infopageText=Infopage-Text
+information=Information
+italy=Italien
+jabber=Jabber
+jabberID=Jabber-ID
+japan=Japan
+javascript=JavaScript
+calendar=Kalender
+cardSystem=Kartensystem
+chestnutBrown=Kastanienbraun
+category=Kategorie
+categories=Kategorien
+small=Klein
+comment=Kommentar
+comments=Kommentare
+contact=Kontakt
+contactData=Kontakt-Daten
+costs=Kosten
+criticism=Kritik
+italic=Kursiv
+briefDescription=Kurzbeschreibung
+latex=LaTeX
+latexSupport=LaTeX-Support
+country=Land
+level=Level
+love=Liebe
+lime=Limone
+link=Link
+links=Links
+lists=Listen
+logIn=LogIn
+logOut=LogOut
+loginBox=Login-Box
+loginForm=Login-Form
+logo=Logo
+delete=Löschen
+msn=MSN
+msnNumber=MSN-Nummer
+navyBlue=Marinblau
+marketplace=Marktplatz
+material=Material
+mexico=Mexiko
+leasePrice=Mietpreis
+members=Mitglieder
+moderators=Moderatoren
+trashCan=Mülleimer
+lastname=Nachname
+message=Nachricht
+name=Name
+nationality=Nationalität
+new=Neu
+news=News
+newsArchive=News-Archiv
+newsText=News-Text
+netherlands=Niederlande
+normal=Normal
+termsOfUse=Nutzungsbedingungen
+okay=Okay
+olive=Olive
+onlineActivity=Online-Aktivität
+organization=Organisation
+organizations=Organisationen
+place=Ort
+pgpkey=PGP-Key
+pmNotification=PN-Benachrichtigung
+password=Passwort
+person=Person
+typeOfPerson=Personentyp
+space=Platz
+poland=Polen
+portugal=Portugal
+postalAddress=Postanschrift
+zipcode=Postleitzahl
+price=Preis
+privacy=Privatsphäre
+profileSettings=Profil-Einstellungen
+points=Punkte
+pointEfficiency=Punkteeffizienz
+pointSystem=Punktesystem
+purple=Purpur
+sourcecode=Quelltext
+rss=RSS
+rssFeed=RSS-Feed
+rank=Rang
+ranking=Rangliste
+right=Recht
+rules=Regeln
+register=Registrieren
+registerUrl=Registrierungs-URL
+huge=Riesig
+role=Rolle
+roles=Rollen
+red=Rot
+saudiArabia=Saudiarabien
+fastRating=Schnell-Bewertung
+font=Schriftart
+fontFamily=Schriftfamilie
+fontColor=Schriftfarbe
+fontSize=Schriftgröße
+fontOptions=Schriftoptionen
+black=Schwarz
+sweden=Schweden
+switzerland=Schweiz
+pages=Seiten
+semester=Semester
+send=Sende
+shoutbox=Shoutbox
+safety=Sicherheit
+visible=Sichtbar
+signature=Signatur
+silver=Silber
+skype=Skype
+skypeNick=Skype-Nick
+smiley=Smiley
+smileys=Smileys
+directDownload=Sofort-Download
+song=Song
+miscellaneous=Sonstiges
+spain=Spanien
+save=Speichern
+gameNumber=Spiel-Nr
+games=Spiele
+gameType=Spieltyp
+district=Stadteil
+home=Startseite
+statistics=Statistik
+status=Status
+street=Straße
+studentCouncil=Studentenrat
+studyCourse=Studiengang
+studyInformation=Studieninformationen
+studies=Studium
+studyThreads=Studium-Threads
+documentSearch=Studiumgoogle
+studyHome=Studiums-Startseite
+search=Suche
+searchCharacteristics=Sucheigenschaften
+toSearch=Suchen
+searchResults=Suchergebnisse
+support=Support
+supportForm=Support-Formular
+synonyms=Synonyme
+days=Tage
+diary=Tagebuch
+participant=Teilnehmer
+phone=Telefon
+dateDescription=Terminbeschreibung
+text=Text
+textFormatting=Textformatierung
+textFormattingOptions=Textformatierungsmöglichkeiten
+theme=Thema
+themes=Themen
+threads=Threads
+tips=Tipps
+bet=Tippspiel
+title=Titel
+togo=Togo
+toolbar=Toolbar
+trackbackUris=Trackback-URIs
+trackbacks=Trackbacks
+type=Typ
+subBoards=Unterforen
+documents=Unterlagen
+documentRanking=Unterlagenbewertung
+documentSystem=Unterlagensystem
+subList=Unterliste
+underlined=Unterstrichen
+subtitle=Untertitel
+upload=Upload
+user=User
+userStatistics=User-Statistiken
+userSearch=User-Suche
+userTip=User-Tipp
+userPicture=Userbild
+userInfo=Userinformationen
+userName=Username
+available=Verfügbar
+networking=Vernetzung
+versions=Versionen
+views=Views
+fullText=Volltext
+firstname=Vorname
+preRound=Vorrunde
+preview=Vorschau
+management=Vorstand
+ecoPoints=W-Punkte
+WorldCupBet=WM-Tippspiel
+blog=Weblog
+white=Weiß
+advertising=Werbung
+weather=Wetter
+repetition=Wiederholung
+yahooNumber=Yahoo!-Nummer
+show=Zeige
+time=Zeit
+room=Zimmer
+quotes=Zitate
+quoteFunction=Zitatfunktion
+back=Zurück
+merge=Zusammenlegen
+addition=Zusatz
+additions=Zusätze
+secondaryStudyCourse=Zweitstudiengang
+descending=absteigend
+all=alle
+created=angelegt
+anonymous=anonym
+reply=antworten
+cancel=aufheben
+ascending=aufsteigend
+hide=ausblenden
+detailed=ausführlich
+toLogOut=auszuloggen
+paid=bezahlt
+until=bis
+fadeIn=einblenden
+loggedIn=eingeloggt
+remove=entfernen
+false=falsch
+voluntarily=freiwillig
+read=gelesen
+closed=geschlossen
+given=gegeben
+set=gesetzt
+here=hier
+toComment=kommentieren
+compact=kompakt
+complete=komplett
+left=links
+negative=negativ
+neutral=neutral
+or=oder
+positive=positiv
+wrote=schrieb
+and=und
+unknown=unbekannt
+invisible=unsichtbar
+prohibit=verbieten
+warn=verwarnen
+from=von
+female=weiblich
+further=weiter
+important=wichtig
+toQuote=zitieren
+random=zufällig
+heading=Überschrift
+//
+//
+// - common
+//
+welcome=Willkommen auf [[local.local.project_domain]]
+backToHome=Zur Startseite
+pleaseChoose=Bitte wählen
+english=englisch
+short=kurz
+dataChanged=Daten wurden geändert. Bitte UNBEDINGT zur weiteren Navigation die u.a. Links verwenden.
+backToAdmin=Zurück zum Admin-Bereich
+backToEdit=Zurück zur Maske
+noFilter=Kein Filter
+containsText=enthält folgenden Text
+sort=sortieren
+noCriterion=Kein Kriterium
+applyFilter=Filter-Kriterien anwenden [ALT+f]
+resetFilter=Filter-Kriterien zurücksetzen [ALT+z]
+file=Datei
+point(s)=Punkt(e)
+point=Punkt
+positiveRating=positive Bewertung
+manage=verwalten
+change=Ändern
+options=Optionen
+extraUser=Extra-User
+granted=erlaubt
+denied=verboten
+backToUserAdminMenu=zurück zum User-Admin-Menü
+//
+//
+// - index
+//
+index_newestUser=Neuster User
+index_registeredStudents=Insgesamt {$latest_user_number} angemeldete {$local_city->getName()}er Studenten!
+index_haveFun=Das [[local.local.project_name]]-Team wünscht Euch viel Spaß!
+index_newsUnpublished=noch nicht veröffentlichte News
+index_addNews=News hinzufügen
+index_noNews=Es gibt keine News, so was aber auch...
+//
+//
+// - default
+//
+default_toContent=zum Seiteninhalt
+default_toMenu=zum Menü
+default_leftBoxes=linke Boxen
+default_rightBoxes=rechte Boxen
+default_toFooter=zur Fußzeile
+default_showDebugMessage=Debug-Message anzeigen
+default_hideDebugMessage=Debug-Message ausblenden
+default_stat-=- stat
+default_stat+=+ stat
+//
+//
+// - error
+//
+error_occurred=Ein Fehler ist aufgetreten
+error_goBack=Zurück &ndash; Viel Glück.
+//
+//
+// - help
+//
+help_myUnihelp=Mein Unihelp
+help_myProfile=Mein Profil
+help_myBlog=Mein Blog
+help_myMessages=Meine Nachrichten
+help_myGroups=Meine Gruppen
+help_mySettings=Meine Einstellungen
+help_activities=UH-Aktionen
+help_userSearch=Usersuche
+help_referFriends=Freunde werben
+help_overview=Übersicht
+help_lastPosts=letzte Beiträge
+help_groupBoards=Meine Gruppenforen
+help_newPosts=neue Beiträge
+help_newDocuments=neue Unterlagen
+help_myCourses=meine Fächer
+help_manageCourses=Fächerverwaltung
+help_points=Das Punktesystem
+help_profileText=Du erreichst Dein Profil immer über Mein Unihelp -> Mein Profil oder durch klicken auf Dein Userbild in der Box Userinformation. Das Profil anderer User erreichst Du durch klicken auf den Namen oder das Userbild. Die Seite gliedert sich dann in den Userinformationsbereich, das Tagebuch und das Gästebuch sowie die Eingabemaske.
+nameserver 2.4.4.2
+help_userInformationArea=Der Userinformationsbereich
+help_mostImportantLinks=Ganz oben siehst Du die wichtigsten Links für das Profil. Diese sind:
+help_guestbookLink=Durch diesen Link landest Du bei Deinem Gästebuch. Falls Du auf der Profilseite eines anderen Users bist, wirst Du hier auf sein Gästebuch weitergeleitet.
+help_diaryLink=Durch diesen Link gelangst Du zum Verfassen eines Tagebucheintrages. Wenn Du auf der Seite eines anderen Users bist, wirst Du zum Verfassen eines Gästebucheintrages weitergeleitet.
+help_messageSystem=Du gelangst durch diesen schnell zu Deinem PM-Bereich bzw., wenn Du auf der Profilseite eines anderen Users bist, zur Eingabemaske, um ihm eine PM zu schicken. Zum schreiben einer PM brauchst Du allerdings
+help_uploadOverview=Hier kommst Du zu der Übersicht Deiner hochgeladenen Dateien, bzw. der vom User hochgeladenen Dateien, falls Du auf der Profilseite eines anderen Users bist.
+help_friends=Auf der Profilseite eines anderen Users siehst Du auch einen dieser Links, je nachdem ob der User auf Deiner Feundesliste ist oder nicht.
+help_userPicture=Neben diesen Links ist das Userbild mit, falls vorhanden, der Signatur. Beides kannst Du hier angeben:
+help_general=Unter den Links befindet sich eine Box, die viele allgemeine Angaben enthält. Unter anderem sieht man da Dein Alter und, falls Du das bei deinen Einstellungen angegeben hast, auch Dein Geburtsdatum. Außerdem ist hier auch eine Übersicht über Deine Punkte und Deine Aktivität. Deine W-Punkte sind dabei nur von Dir zu sehen. An diese Elemente schließt sich Deine Freundesliste an, die Du mit einem Feauture(LINK) auch bearbeiten kannst. Abschließend in diesem Abschnitt ist dann Deine Informationsbox. Was bei Eigener Beschreibung steht und was andere User unter Kontakt sehen, kannst Du wieder bei Deinen Einstellungen angeben. Du kannst dieser Box durch einige Feautures noch mehr Methoden hinzufügen.
+help_diary=Tagebuch und Gästebuch
+help_diaryText=In Deinem Tagebuch kannst Du ganz individuell Deine Lieblingsfotos, eine Beschreibung über Dich oder alles andere was Dir noch einfällt veröffentlichen. Deiner Kreativität sind (fast) keine Grenzen gesetzt! Du kannst Dein Tagebuch so gestalten wie Du möchtest und jederzeit wieder verändern. Hier wird Deiner Persönlichkeit quasi keinerlei Einhalt geboten. In Deinem Gästebuch können Dir andere User schreiben und Dir außerdem in einem Eintrag pro Tag Punkte geben. Du kannst auf ihre Einträge antworten(Bild) bzw. zitierend antworten. Wenn Du mit einem Eintrag absolut nicht einverstanden bist, kannst Du ihn auch melden (Bild). Beachte dabei bitte die Hinweise des Supports. (Link!) Desweiteren kannst Du jeden Beitrag auch direkt verlinken. Klicke dazu mit der linken Maustaste auf (Bild) und dann auf Link-Adresse kopieren. Einen Beitrag melden und den Beitrag verlinken kannst Du auch in den Gästebüchern anderer User. Desweiteren verfügen Tagebuch und Gästebuch über einen nichtlinearen Seitenzähler. So kannst Du schneller auch zu älteren Beiträgen gelangen.
+//
+//
+// - modules
+//
+// -- admin
+//
+// --- banner
+//
+banner_allAdvertisements=alle Werbung
+banner_displayedFrom=wird angezeigt von
+banner_rate=Gewicht
+banner_newAdvertisements=neue Werbung
+banner_editAdvertisements=Werbung editieren
+banner_name=Banner-Name
+banner_destURL=Banner Destination URL
+banner_displayFrom=Anzeigen von
+banner_displayUntil=Anzeigen bis
+banner_file=Banner-Datei
+banner_path=externer Banner-Pfad (keine Datei wird hochgeladen)
+banner_rotation=Banner-Rotationsfaktor (>=0 und wenn =0 => sichtbar = false)
+//
+//
+// --- courses_merge
+//
+courses_merge_merge=Fächer zusammenlegen
+courses_merge_success=Fächer wurden erfolgreich zusammengelegt
+courses_merge_warning=Fach 2 wird zu Fach 1 hinzugefügt. Fach 2 WIRD UNWIDERBRINGLICH GELÖSCHT.
+//
+//
+// --- edit_courses
+//
+edit_courses_edit=Fächer bearbeiten
+edit_courses_courseName=Fach-Name
+edit_courses_save=Änderungen speichern [ALT+s]
+edit_courses_reset=Änderungen zurücknehmen
+edit_courses_newCourse=Neues Fach anlegen
+//
+//
+// --- edit_features
+//
+edit_features_edit=Features bearbeiten
+edit_features_editFeature=Feature bearbeiten
+edit_features_pointLevel=Punkte-Level
+edit_features_iconURL=Icon-URL
+edit_features_add=Features hinzufügen
+edit_features_addFeature=folgendes Feature hinzufügen
+edit_features_rights=Achtung der User muss auch dieses Reacht haben, sonst kann er dieses Feature nicht nutzen!
+edit_features_choose=Features auswählen
+edit_features_requiredPoints=benötigte Punkte
+edit_features_addFeatureIfPossible=Feature hinzufügen (Recht muss vorhanden sein)
+//
+//
+// --- edit_files
+//
+edit_files_edit=Unterlagen bearbeiten
+edit_files_freeDownload=Kostenfreier Download der Datei zum Ansehen
+edit_files_editFile=Datei bearbeiten
+edit_files_confirmDelete=Datei wirklich löschen?
+edit_files_deleteCompleteFile=Unterlage KOMPLETT löschen
+edit_files_deletePartFile=Eine Version der Unterlage löschen
+//
+//
+// --- edit_group_rights
+//
+edit_group_rights_backToOverview=Zu der Organisations-Übersicht
+edit_group_rights_edit=Organisationsrechte bearbeiten von:
+//
+//
+// --- edit_group
+//
+edit_group_add=neue Organisation anlegen
+edit_group_info=Zur Info-Seite von
+edit_group_editRights=Rechte bearbeiten
+edit_group_edit=Organisation bearbeiten
+//
+//
+// --- edit_point_sources
+//
+edit_point_sources_editChange=Punkteveränderung bearbeiten
+edit_point_sources_manage=Punktequellen und -senken verwalten
+edit_point_sources_levelPoints=Levelpunkte
+edit_point_sources_economyPoints=Wirtschaftspunkte
+//
+//
+// --- edit_role
+//
+edit_role_add=neue Rolle anlegen
+//
+//
+// --- edit_study_paths
+//
+edit_study_paths_edit=Studiengang bearbeiten
+edit_study_paths_add=Neuen Studiengang anlegen
+edit_study_paths_editTag=Tag zu folgendem Studiengang bearbeiten:
+edit_study_paths_all=alle Studiengänge
+edit_study_paths_editTags=Tags bearbeiten
+//
+//
+// --- edit_user_rights
+//
+edit_user_rights_edit=Nutzerrechte bearbeiten von
